@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Mahbubul Majumder</title>
+    <description>I intend to share the struggled experiences I had while learning. If this saves time for others, I will be happy. My goal is to write about simple things, since simple tasks appear to be the most complex task in my dictionary. 
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 20 Aug 2014 01:28:22 -0500</pubDate>
-    <lastBuildDate>Wed, 20 Aug 2014 01:28:22 -0500</lastBuildDate>
+    <pubDate>Wed, 20 Aug 2014 09:28:16 -0500</pubDate>
+    <lastBuildDate>Wed, 20 Aug 2014 09:28:16 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
