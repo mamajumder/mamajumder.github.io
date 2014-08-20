@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Lets start with a circle in D3"
 date:   2014-08-14 01:47:26
 categories: jekyll update
 ---
