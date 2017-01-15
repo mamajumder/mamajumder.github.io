@@ -1,23 +1,63 @@
----
-layout: default
----
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="script/style.css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-<div class="home">
+<title>Mahbubul Majumder</title>
+</head>
+<body>
+<div id="navbar"> 
+<h1> Mahbubul Majumder's Site </h1>
+</div>
+<div id="wrap", class="wrapper">
+<header>
+<img src="images/UNO-lockup-color-dark-backgrd.png"/>
+<p>Mathematics</p>
+<ul class="header">
+<li><a href="index.html">Home</a></li>
+<li><a href="html/publication.html">Publications</li>
+<li><a href="html/teaching.html">Teaching</li>
+<li><a href="html/experiments.html">Experiments</li>
+<li><a href="html/datavisualization.html">Data visualization</li>
+<li><a href="html/webresources.html">Web resources</li>
+<li><a href="documents/resume.pdf" target="_blank">Download CV</a></li>
+</ul>
+</header>
+<section>
+<div id="contact">
+	<img src="images/majumder2.png" width="99%" style="float:right; border:0;"/>
+	<p>Mahbubul Majumder, PhD <br>
+	Assistant Professor <br>
+	Department of Mathematics <br>
+	238 Durham Science Center <br> 
+	Univ. of Nebraska at Omaha <br>
+	<a href="mailto:mmajumder@unomaha.edu">mmajumder@unomaha.edu</a><br>
+	Phone: (402) 554-2734 <br>
+	Fax: (402) 554-2975 </p>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+
+<h1>Welcome</h1>
+<p> This is the web site of Mahbubul Majumder. I am an Assistant Professor of statistics in the department of Mathematics, <a href="http://www.unomaha.edu/math/">University of Nebraska at Omaha</a> (UNO). My academic training is in statistics with specialization in data visualization and visual statistical inference. Before getting to the academic world I had the opportunity to work with some industries dealing with data and creating data products. This motivated me to work for developing a data science program at UNO. </p>
+<h2>Education</h2>
+
+<ul>
+<li><code>PhD</code> Statistics, Iowa State University, Ames, IA, 2013</li>
+<li><code>MA </code> Statistics, Ball State University, Muncie, IN, 2007</li>
+<li><code>MSc</code> Statistics, University of Dhaka, Bangladesh, 1998</li>
+<li><code>BSc</code> Statistics, University of Dhaka, Bangladesh, 1996 </li>
+</ul>
+<h2>Research Interest</h2>
+<ul class="fa-ul">
+<li>Visual statistical inference</li>
+<li>Exploratory data visualization and quantification</li>
+<li>Statistical modeling</li>
+<li><i class="fa-li fa fa-spinner fa-spin"></i>Data Science and big data problems</li>
+</ul>
+
+</section>
+
+</div>
+</body>
+</html>

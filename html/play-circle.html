@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>src="http://d3js.org/d3.v3.min.js"</script>
+</head>
+<body>
+<div>
+<svg id="circle-holder"></svg>
+</div>
+
+<script>
+var svg = d3.select("#circle-holder");
+var data = [
+  {"x":"70",  "colorN":"#F8766D"},
+  {"x":"130", "colorN":"#7CAE00"},
+  {"x":"180", "colorN":"#00BFC4"},
+  {"x":"240", "colorN":"#C77CFF"}
+];
+svg.selectAll("circle")
+     .data([50,100,150,200,250,300,350,400,450,500,550])
+     .enter().append("circle")
+         .attr("cx",function(d){return d;})
+         .attr("cy", 80)
+         .attr("r",50);
+
+
+svg.selectAll("circle")
+     .data(data)
+     .enter().append("circle")
+         .attr("cx",function(d){return d.x;})
+         .attr("cy", 80)
+         .attr("r",50);
+</script>
+</body>
+</html>

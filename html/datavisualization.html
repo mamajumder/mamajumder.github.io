@@ -1,0 +1,235 @@
+<html>
+<head>
+<title>Mahbubul Majumder</title>
+
+<script src="../script/d3/d3.js" charset="utf-8"></script>
+<link rel="stylesheet" href="../script/style.css">
+<link rel="stylesheet" href="../script/d3style.css">
+
+</head>
+<body>
+<div id="navbar"> 
+<h1> Mahbubul Majumder's Site </h1>
+</div>
+<div id="wrap", class="wrapper">
+<header>
+<img src="../images/UNO-lockup-color-dark-backgrd.png"/>
+<p>Mathematics</p>
+<ul class="header">
+<li><a href="../index.html">Home</a></li>
+<li><a href="publication.html">Publications</li>
+<li><a href="teaching.html">Teaching</li>
+<li><a href="experiments.html">Experiments</li>
+<li><a href="datavisualization.html">Data visualization</li>
+<li><a href="webresources.html">Web resources</li>
+<li><a href="../documents/resume.pdf" target="_blank">Download CV</a></li>
+</ul>
+</header>
+
+<section>
+<h1>Data Visualization</h1>
+<p>Interactive data visualization has never been so wonderful. R packages like <a href="http://ggvis.rstudio.com/" target="_blank">ggviz</a> or <a href="http://shiny.rstudio.com/" target="_blank">shiny</a> made it doable for many users like me. And <a href="http://d3js.org/" target="_blank">D3</a>? Does it have any limit? I could not resist to put a simple D3 example that could be reproduced by anyone. The main purpose is to demonstrate the quality of user interactivity with a data plot. To make it simple we used color as our input data, we interact with a text while the colored circle is focused. Note that interacting text could be any other plot where we would like to display some information based on each circle.
+</p>
+
+<div> <p>Just move your mouse over circles and see the color of that particular circle.</p>
+<svg id="d3svg"> </svg>
+<h4 id="colorN"> </h4>
+</div>
+
+
+<div id ="htmlCode">
+
+<h3>HTML Source Code</h3>
+
+<p>The complete HTML source code to generate this simple D3 example is given below. If you want to reproduce this, please copy the codes in a plain text editor and save as (say circleD3.html). Open the saved HTML file on a web browser. </p>
+
+<p>
+<code>
+
+&lt;html&gt;<br />
+&lt;head&gt;<br />
+&lt;script src=&quot;http://d3js.org/d3.v3.min.js&quot;&gt;&lt;/script&gt;<br />
+&lt;style&gt;<br />
+circle {<br />
+  stroke: white;<br />
+  stroke-width: 3px;<br />
+}<br />
+&lt;/style&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+<br />
+&lt;div id=&quot;svgHolder&quot;&gt;<br />
+&lt;p&gt;Just move your mouse over circles and see the color of that particular circle.&lt;/p&gt;<br />
+&lt;svg id=&quot;d3svg&quot;&gt; &lt;/svg&gt;<br />
+&lt;h4 id=&quot;colorN&quot;&gt; &lt;/h4&gt;<br />
+&lt;/div&gt;<br />
+<br />
+&lt;script&gt;<br />
+var svg = d3.select(&quot;#d3svg&quot;);<br />
+<br />
+// JSON data format for circle color and x coordinate<br />
+var data = [<br />
+  {&quot;x&quot;:&quot;70&quot;,  &quot;colorN&quot;:&quot;#F8766D&quot;},<br />
+  {&quot;x&quot;:&quot;130&quot;, &quot;colorN&quot;:&quot;#7CAE00&quot;},<br />
+  {&quot;x&quot;:&quot;180&quot;, &quot;colorN&quot;:&quot;#00BFC4&quot;},<br />
+  {&quot;x&quot;:&quot;240&quot;, &quot;colorN&quot;:&quot;#C77CFF&quot;}<br />
+];<br />
+<br />
+//drawing the circles on svg element<br />
+svg.selectAll(&quot;circle&quot;)<br />
+    .data(data)<br />
+    .enter().append(&quot;circle&quot;)<br />
+       .attr(&quot;cx&quot;, function(d) { return d.x; })<br />
+       .attr(&quot;cy&quot;, 60)<br />
+       .attr(&quot;r&quot;, 35)<br />
+       .style(&quot;fill&quot;, function(d) { return d.colorN; });<br />
+<br />
+//action on circles starts here<br />
+d3.selectAll(&quot;circle&quot;)<br />
+    .on(&quot;mouseover&quot;, function() { <br />
+       makeBig(d3.select(this));<br />
+       getColor(d3.select(this));<br />
+      })<br />
+    .on(&quot;mouseout&quot;, function() { <br />
+       makeNormal(d3.select(this));<br />
+       d3.select(&quot;#colorN&quot;).text(&quot;&quot;);<br />
+      });<br />
+<br />
+<br />
+//defining some functions<br />
+makeBig = function(thisCircle){<br />
+   thisCircle<br />
+      .transition()<br />
+      .duration(1000)<br />
+      .attr(&quot;r&quot;, 60);<br />
+}<br />
+<br />
+makeNormal = function(thisCircle){<br />
+   thisCircle<br />
+      .transition()     <br />
+      .duration(500)<br />
+      .attr(&quot;r&quot;, 35);<br />
+}<br />
+<br />
+getColor = function(thisCircle){<br />
+  colorVal = thisCircle.style(&quot;fill&quot;);<br />
+  msg = &quot;The color of this circle is : &quot; + colorVal;<br />
+  d3.select(&quot;#colorN&quot;)<br />
+        .text(msg)<br />
+        .style(&quot;color&quot;, colorVal);<br />
+}<br />
+<br />
+&lt;/script&gt;<br />
+<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;
+
+
+</code>
+</p>
+
+<p>Note: In case the HTML file do not run, you may need to put it in a web server or convert your machine into a temporary web server. For MAC users, a command like <code>python -m http.server 8888 &</code> can turn the machine into a temporary web server. You have to run this command from the same directory where you save your newly created HTML file. Now it can be viewed in any web browser from the link localhost:8888/circleD3.html</p>
+
+</div>
+
+<div id="rCode">
+<h2>R Code</h2>
+<p>In this example 4 contrasting colors were used. These colors are taken from equally spaced hues around the color wheel. The R codes to obtain these colors is shown below. This is the default color scheme for R package ggplot2.<br>
+<code>
+n <- 4 <br>
+hues <- seq(15, 375, length=n+1) <br>
+cols <- hcl(h=hues, l=65, c=100)[1:n] <br>
+
+#list the color <br>
+cols 
+</code></p>
+
+</div>
+
+</section>
+
+</div>
+
+<script>
+var svg = d3.select("#d3svg");
+
+// JSON data format for circle color and x coordinate
+var data = [
+  {"x":"70",  "colorN":"#F8766D"},
+  {"x":"130", "colorN":"#7CAE00"},
+  {"x":"180", "colorN":"#00BFC4"},
+  {"x":"240", "colorN":"#C77CFF"}
+];
+
+//drawing the circles on svg element
+svg.selectAll("circle")
+    .data(data)
+    .enter().append("circle")
+       .attr("cx", function(d) { return d.x; })
+       .attr("cy", 60)
+       .attr("r", 35)
+       .style("fill", function(d) { return d.colorN; });
+
+//action on circles starts here
+d3.selectAll("circle")
+    .on("mouseover", function() { 
+       makeBig(d3.select(this));
+       getColor(d3.select(this));
+      })
+    .on("mouseout", function() { 
+       makeNormal(d3.select(this));
+       d3.select("#colorN").text("");
+      });
+
+
+//defining some functions
+makeBig = function(thisCircle){
+   thisCircle
+      .transition()
+      .duration(1000)
+      .attr("r", 60);
+}
+
+makeNormal = function(thisCircle){
+   thisCircle
+      .transition()     
+      .duration(500)
+      .attr("r", 35);
+}
+
+getColor = function(thisCircle){
+  colorVal = thisCircle.style("fill");
+  msg = "The color of this circle is : " + colorVal;
+  d3.select("#colorN")
+        .text(msg)
+        .style("color", colorVal);
+}
+
+
+/* ======= Testing codes ================
+
+// selecting value of an attribute
+d3.select(this).attr("cx")
+
+
+//drawing some circles on the svg element manually
+//Notice how differently we actually drew the circles
+for (j = 0; j < 4; j++) {
+svg.append("circle")
+     .attr("cx", 70+60*j)
+     .attr("cy", 80)
+     .attr("r", 35);
+
+}
+
+//put data on the fly and modify styles
+d3.selectAll("circle")
+    .data(["#F8766D", "#7CAE00", "#00BFC4", "#C77CFF"])
+    .style("fill",function(d) { return d; });
+
+=========== testing ends =================*/
+
+
+</script>
+</body>
+</html>
