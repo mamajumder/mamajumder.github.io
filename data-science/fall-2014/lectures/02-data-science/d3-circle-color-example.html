@@ -1,0 +1,77 @@
+<html>
+<head>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<style>
+circle {
+  stroke: white;
+  stroke-width: 3px;
+}
+</style>
+</head>
+<body>
+
+<div id="svgHolder">
+<p>Just move your mouse over circles and see the color of that particular circle.</p>
+<svg id="d3svg"> </svg>
+<h4 id="colorName"> </h4>
+</div>
+
+<script>
+var svg = d3.select("#d3svg");
+
+// JSON data format for circle color and x coordinate
+var data = [
+  {"x":"70",  "colorN":"#F8766D"},
+  {"x":"130", "colorN":"#7CAE00"},
+  {"x":"180", "colorN":"#00BFC4"},
+  {"x":"240", "colorN":"#C77CFF"}
+];
+
+//drawing the circles on svg element
+svg.selectAll("circle")
+    .data(data)
+    .enter().append("circle")
+       .attr("cx", function(d) { return d.x; })
+       .attr("cy", 60)
+       .attr("r", 35)
+       .style("fill", function(d) { return d.colorN; });
+
+//action on circles starts here
+d3.selectAll("circle")
+    .on("mouseover", function() { 
+       makeBig(d3.select(this));
+       getColor(d3.select(this));
+      })
+    .on("mouseout", function() { 
+       makeNormal(d3.select(this));
+       d3.select("#colorName").text("");
+      });
+
+
+//defining some functions
+makeBig = function(thisCircle){
+   thisCircle
+      .transition()
+      .duration(1000)
+      .attr("r", 60);
+}
+
+makeNormal = function(thisCircle){
+   thisCircle
+      .transition()     
+      .duration(500)
+      .attr("r", 35);
+}
+
+getColor = function(thisCircle){
+  colName = thisCircle.style("fill");
+  msg = "The color of this circle is : " + colName;
+  d3.select("#colorName")
+        .text(msg)
+        .style("color", colName);
+}
+
+</script>
+
+</body>
+</html>

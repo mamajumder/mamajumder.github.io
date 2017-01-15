@@ -1,0 +1,249 @@
+\documentclass{article}
+\usepackage[vmargin=1in,hmargin=1in]{geometry}
+\usepackage{booktabs}
+\begin{document}
+
+<<include=FALSE>>=
+opts_chunk$set(fig.align='center', message=FALSE, cache=FALSE)
+@
+
+\begin{center}
+\large \textsc{Homework 2} \\
+STAT 4410/8416 Section 001\\
+\textsc{Fall 2014}\\
+Due: September 12, 2014 by midnight
+\normalsize
+\end{center}
+
+
+\begin{enumerate}
+\item  We generate a $n$x$k$ matrix $M$ and a vector $V$ of length $k$ for some specific values of $n$ and $k$ as follows;
+<<>>=
+set.seed(4286)
+n <- 4
+k <- 5
+V <- sample(seq(4), size=k, replace=TRUE)
+M <- matrix(rnorm(n*k), ncol=k)
+@
+
+\begin{enumerate}
+\item Now, carefully review the following for loop. Rewrite the code that does the same job but doesn't use a for loop.
+
+<<>>=
+X <- M
+for(i in seq(n)){
+  X[i,] <- round(M[i,]/V, 2)
+}
+@
+
+{\bf Answer:} The following codes show how we can do the same operation without for loop. Our Result $Y$ is same as $X$ above and we demonstrate that using function \texttt{identical()}.
+<<>>=
+Y <- round(t(t(M)/V), 2)
+identical(X,Y)
+
+# or if you want to use apply
+Z <- t(round(apply(M,1,'/',V), 2))
+identical(X,Z)
+
+# yet another solution
+VV <- matrix(rep(V, each=n), ncol=k)
+W <- round(M/VV, 2)
+identical(X,W)
+@
+
+The above three solutions demonstrate three concepts. Please make sure you understand those concepts. I leave it as an excersize to test which one performs better with large data.\\
+
+\item Now do the same experiment for $n=400$ and $k=500$. Which code runs faster, your code or the for loop? Demonstrate that using function \texttt{system.time()}.\\
+
+{\bf Answer:} 
+<<>>=
+set.seed(4286)
+n <- 400
+k <- 500
+V <- sample(seq(4), size=k, replace=T)
+M <- matrix(rnorm(n*k), ncol=k)
+
+X <- M 
+system.time(for(i in seq(n)) X[i,] <- round(M[i,]/V, 2))
+
+system.time(round(t(t(M)/V), 2))
+@
+
+
+\end{enumerate}
+\item The data set \texttt{chickwts} contains the Chicken Weights by Feed Type. Draw a side by side boxplot of weight for each feed type. Order the feed type based on the median weight. Provide your codes and the plot. Which food type is responsible for highest median weight of the chicken? \\
+
+{\bf Answer:} Food type casein is responsible for highest weights. The codes and the plot are given below.
+
+<<fig.width=5,fig.height=5,out.width='.5\\linewidth'>>=
+library(ggplot2)
+ggplot(chickwts, aes(reorder(feed, weight, median), weight)) + 
+  geom_boxplot() + xlab("Feed Type")
+@
+
+\item We want to generate a plot of US arrest data (USArrests). Please provide the detailed codes to answer the following questions.
+
+\begin{enumerate}
+\item Obtain USA state boundary coordinates data for USA map using function \texttt{map\_data()} and store the data in \texttt{mdat}. Display first few data from \texttt{mdat} and notice that there is a column called \texttt{order} that contains the true order of coordinates.\\
+
+<<>>=
+library(maps)
+mdat <- map_data("state")
+head(mdat)
+@
+
+\item \label{standardize-rate} You will find USA crime data in the data frame called \texttt{USArrests}. Standardize the crime rates and create a new column called \texttt{state} so that all the state names are lower case. Store the new data in \texttt{arrest} and report first few data.\\
+
+<<>>=
+# obtaining the state names in lower case
+state <- tolower(row.names(USArrests))
+
+# Standardizing the crime rates as suggested
+std_crime <- scale(USArrests)
+
+arrest <- data.frame(state, std_crime)
+head(arrest)
+@
+
+\item \label{order-data} Merge the two data sets \texttt{mdat} and \texttt{arrest} by state name. Merging will change the order of coordinates data. So, order the data back to the original order and store the merged-ordered data in \texttt{odat}. Report first few data from \texttt{odat}.
+
+<<>>=
+arrestdat <- merge(mdat, arrest, by.x='region', by.y='state', all.x=T)
+odat <- arrestdat[order(arrestdat$order),]
+head(odat)
+@
+
+\item All the columns of \texttt{odat} is not necessary for our analysis. So, subset by selecting only columns long, lat, group, region, Murder, Assault, UrbanPop, Rape. Store the data in \texttt{sdat} and report first few rows.
+<<>>=
+sdat <- subset(odat, select=c("long", "lat", "group", "region", "Murder", 
+                               "Assault", "UrbanPop",  "Rape" ))
+head(sdat)
+@
+
+\item Melt the data frame \texttt{sdat} with id variables long, lat, group, region. Store the molten data in \texttt{msdat} and report first few rows of data.
+
+<<>>=
+library(reshape2)
+msdat <- melt(sdat, id=c("long", "lat", "group", "region"))
+head(msdat)
+@
+
+\item \label{plot-crime} The molten data frame \texttt{msdat} is now ready to be plotted. Create a plot showing USA state map, fill with value and facet\_wrap with variable. Please don't add any legend and make sure that faceting labels are identified so that we can compare the facetted plots.
+<<fig.width=10,fig.height=6>>=
+library(scales)
+ggplot(msdat, aes(x=long, y=lat,group=group)) +
+  geom_polygon(aes(fill=value), colour = alpha("white", 1/2), size = 0.2) + 
+  theme_bw() + theme(legend.position = "none") +
+  scale_fill_continuous(low="blue", high="hotpink") + facet_wrap(~variable)
+@
+
+\item Now examine the plot you have generated in question (\ref{plot-crime}) and answer the following questions based on what you see in the plot.
+
+\begin{enumerate}
+\item For each of the crimes, name two states with the highest crime rate.\\
+
+{\bf Answer:} By visual inspection we see the following states with highest crime rates for the respective crimes as shown in the table below.
+
+<<echo=FALSE,results='asis'>>=
+crimes_dat <- data.frame(crimes=c("Murder", "Assault","Rape"),
+                         states=c("Mississipi, Georgia",
+                                  "North Carolina, Florida",
+                                  "Nevada, California")) 
+library(knitr)
+kable(crimes_dat,format = 'latex', booktabs = TRUE)
+@
+
+
+\item Do you think larger urban population is an indicative of larger murder rate? Why or why not? \\
+
+{\bf Answer:} No, we don't think it is true. Murder rates are highest for Mississippi  and Georgia but their urban population is among the smallest. On the other hand the urban population was larger for California or New York but their murder rates are not among the tops.
+
+\end{enumerate}
+
+\item In question (\ref{standardize-rate}) we standardized the crime rates. Why do you think we did this? Explain what would happen if we would not do this.
+
+\item In question (\ref{order-data}) we ordered the data after merging. Why do you think we have to order? Explain what would happen if we would not order.
+
+\end{enumerate}
+
+\item For the following questions please use data frame \texttt{tips} 
+
+\begin{enumerate}
+
+\item \label{bar} Create a bar chart that shows average tip by day.
+
+<<fig.width=5,fig.height=4,out.width='.5\\linewidth'>>=
+avg_tip <- tapply(tips$tip, tips$day, mean)
+avg_dat <- melt(avg_tip)
+ggplot(avg_dat, aes(Var1, value)) + geom_bar(stat="identity") + 
+  xlab("Day") + ylab("Average tip")
+@
+
+\item Compute the average tip, total tip and average size grouped by smoker and day. i.e.,  For each combination of smoker and day you should have a row of these summaries. Report the result in a nice table.
+
+<<results='asis'>>=
+library(dplyr)
+df <- tips %>%
+  group_by(smoker, day) %>%
+  summarize(avg.tip = mean(tip),
+            tot.tip = sum(tip),
+            avg.size = mean(size))
+library(knitr)
+kable(df, format = 'latex', booktabs = TRUE, digits=2)
+@
+
+\item \label{bar-facet} Create a bar chart that shows average tip by day and also faceted by smoker.
+
+<<fig.width=10,fig.height=4,out.width='.95\\linewidth'>>=
+ggplot(df, aes(day, avg.tip)) + geom_bar(stat="identity") + 
+  xlab("Day") + ylab("Average tip") + facet_wrap(~smoker)
+@
+
+\item In questions \ref{bar} and \ref{bar-facet} we plotted the summary of data which does not show us the whole picture. In practice we like to see the whole data. What plot do you suggest to serve the same purpose similar to what we did in question \ref{bar-facet}? In other words, what would be a better plot to show tips by day and facetted by smoker? Please produce that plot and include your codes.
+
+<<fig.width=10,fig.height=6,out.width='.95\\linewidth'>>=
+ggplot(tips, aes(day, tip)) + geom_point() + 
+ # geom_violin(alpha=1/2) +
+  geom_boxplot(alpha=1/2) + 
+  stat_summary(fun.y = mean, geom = "point",  color='red', size=3) +
+  facet_wrap(~smoker)
+@
+
+
+
+
+\end{enumerate}
+
+\item Life expectancy data for four countries are obtained from the world bank database which you will find on blackboard. It contains life expectancy in years for different genders. Download the data from the blackboard and save it on your hard drive. Now answer the following questions. 
+
+\begin{enumerate}
+
+\item Read the file from your hard drive and display first few rows of the data. 
+
+<<>>=
+dat <- read.csv("life-expectancy.csv")
+head(dat)
+@
+
+
+\item \label{life} Generate a plot showing trend line of life expectancy over different year. Color them by sex and facet by country. Include your code and the plot.
+
+<<fig.width=10,fig.height=6,out.width='.95\\linewidth'>>=
+mdat <- melt(dat, id=c("year","sex"))
+ggplot(mdat, aes(as.numeric(year), value)) + geom_line(aes(color=sex)) +
+  facet_wrap(~variable) + xlab("Year") + ylab("Life expectancy (year)")
+@
+
+
+\item Explain what interesting features you notice in the plot of question \ref{life}.
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+\end{document}

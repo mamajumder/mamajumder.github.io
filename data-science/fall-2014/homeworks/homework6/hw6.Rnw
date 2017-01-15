@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage[vmargin=1in,hmargin=1in]{geometry}
+\usepackage{booktabs}
+%\usepackage[utf8x]{inputenc}
+\begin{document}
+
+<<include=FALSE>>=
+opts_chunk$set(fig.align='center', message=FALSE, warnings=FALSE, cache=FALSE)
+@
+
+\begin{center}
+\large \textsc{Homework 6} \\
+STAT 4410/8416 Section 001\\
+\textsc{Fall 2014}\\
+Due: December 11, 2014 by midnight
+\normalsize
+\end{center}
+
+\begin{enumerate}
+
+\item {\bf Working with HDFS:} The Hadoop Distributed File System (HDFS) allows us to manipulate massive amount of data using scalable computing power. For this question we will use the cloudera virtual machine version CDH 5.2X to manipulate data in HDFS. You can take help from others, but {\bf submit your own work}.\\
+
+Please answer the questions below. The first question is answered so you can have an idea how to write answers for this homework.
+
+\begin{enumerate}
+
+\item In your virtual machine, create two HDFS folders using the following commands. Display the output of the command \texttt{hadoop fs -ls}.
+
+<<eval=FALSE>>=
+hadoop fs -mkdir wordcount
+hadoop fs -mkdir wordcount/input
+@
+
+{\bf Answer:}
+
+<<engine='bash', eval=FALSE>>=
+hadoop fs -ls
+
+Found 2 items
+drwxr-xr-x   - cloudera cloudera          0 2014-12-04 13:20 hdfs
+drwxr-xr-x   - cloudera cloudera          0 2014-12-04 22:08 wordcount
+@
+
+
+
+\item Download the file \texttt{words.txt} from blackboard and save it to your home directory (\texttt{/home/cloudera}). Then copy that file to the newly created HDFS folder \texttt{wordcount/input}. Please don't worry if the file is not clean. Just present the output of the following command.
+
+<<eval=FALSE>>=
+hadoop fs -ls wordcount/input
+@
+
+
+\item Now download the JAVA source codes \texttt{WordCount.java} from the blackboard and save it to your home directory. Also create a new folder called \texttt{wordcount\_classes}. Now provide the output of the following command
+
+<<eval=FALSE>>=
+ls
+@
+
+
+
+
+\item \label{out-result} Compile, build and run the \texttt{WordCount.java} program similar to what we did in slide 6 of the hadoop-mapreduce lecture. Output of the program should be saved in a folder called \texttt{wordcount/output} and present the result of the following command. 
+
+<<eval=FALSE>>=
+hadoop fs -ls wordcount/output
+@
+
+
+
+
+\end{enumerate}
+
+\item {\bf Pig in action:} For this exercise we will use \texttt{Pig} to manipulate data in HDFS. Please answer the following questions, provide all the \texttt{Pig} commands you used.
+
+\begin{enumerate}
+
+\item Launch the grunt shell using the command \texttt{pig}. Show the output of the following command and comment if the output is same as what you have seen in question (\ref{out-result}).
+
+<<eval=FALSE>>=
+grunt> ls wordcount/output
+@
+
+
+
+\item LOAD the data file \texttt{part-00000} you just created in folder \texttt{wordcount/output}. While doing this name the first column words and the second column count. Also, first column should be chararray and the second column should be int. Display first 10 rows.
+
+
+
+
+\item ORDER the data by the count of words and display the top 10 most frequent words.
+
+
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
+

@@ -1,0 +1,20 @@
+\documentclass{article}
+
+\begin{document}
+
+\title{An Attractive Template of A Reproducible Data Analysis Document for an Awesome Class Project}
+\author{Mahbubul Majumder \\ Department of Mathematics}
+
+
+\maketitle
+
+
+\begin{abstract}
+The first sentence of the abstract starts with a little background of the problem. The second sentence starts describing the problem with some motivation. If needed add another sentence to increase the readers' interest. After the problem description is over, we need to describe what we have done, how we did it and what results we obtained. We include any challenges we face and solution of that challenges we made. We describe any experiment we did with their findings. We also clearly mention how our results or methods are better than any existing results or methods. Sometimes we like to mention how this work opens up some future work. Abstract should not be more than a paragraph preferably having less than 200 words.
+
+\end{abstract}
+
+\section{Introduction} The first sentence of this section is so attractive that it made the reader concentrate on reading. The second sentence is so great that it made the reader forget the date.
+
+
+\end{document}

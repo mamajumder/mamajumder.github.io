@@ -1,0 +1,113 @@
+\documentclass{article}
+\usepackage[vmargin=1in,hmargin=1in]{geometry}
+\usepackage{booktabs}
+\begin{document}
+
+<<include=FALSE>>=
+opts_chunk$set(fig.align='center',message=FALSE, cache=FALSE)
+@
+
+\begin{center}
+\large \textsc{Homework 2} \\
+STAT 4410/8416 Section 001\\
+\textsc{Fall 2014}\\
+Due: September 26, 2014 by midnight
+\normalsize
+\end{center}
+
+
+\begin{enumerate}
+\item  We generate a $n$x$k$ matrix $M$ and a vector $V$ of length $k$ for some specific values of $n$ and $k$ as follows;
+<<>>=
+set.seed(4286)
+n <- 4
+k <- 5
+V <- sample(seq(4), size=k, replace=TRUE)
+M <- matrix(rnorm(n*k), ncol=k)
+@
+
+\begin{enumerate}
+\item Now, carefully review the following for loop. Rewrite the code that does the same job but doesn't use a for loop.
+
+<<>>=
+X <- M
+for(i in seq(n)){
+  X[i,] <- round(M[i,]/V,2)
+}
+@
+
+\item Now do the same experiment for $n=400$ and $k=500$. Which code runs faster, your code or the for loop? Demonstrate that using function \texttt{system.time()}.\\
+
+\end{enumerate}
+
+\item The data set \texttt{chickwts} contains the Chicken Weights by Feed Type. Draw a side by side boxplot of weight for each feed type. Order the feed type based on the median weight. Provide your codes and the plot. Which food type is responsible for highest median weight of the chicken? \\
+
+\item We want to generate a plot of US arrest data (USArrests). Please provide the detailed codes to answer the following questions.
+
+\begin{enumerate}
+\item Obtain USA state boundary coordinates data for USA map using function \texttt{map\_data()} and store the data in \texttt{mdat}. Display first few data from \texttt{mdat} and notice that there is a column called \texttt{order} that contains the true order of coordinates.\\
+
+\item \label{standardize-rate} You will find USA crime data in the data frame called \texttt{USArrests}. Standardize the crime rates and create a new column called \texttt{state} so that all the state names are lower case. Store the new data in \texttt{arrest} and report first few data.\\
+
+\item \label{order-data} Merge the two data sets \texttt{mdat} and \texttt{arrest} by state name. Merging will change the order of coordinates data. So, order the data back to the original order and store the merged-ordered data in \texttt{odat}. Report first few data from \texttt{odat}.
+
+
+\item All the columns of \texttt{odat} is not necessary for our analysis. So, subset by selecting only columns long, lat, group, region, Murder, Assault, UrbanPop, Rape. Store the data in \texttt{sdat} and report first few rows.
+
+\item Melt the data frame \texttt{sdat} with id variables long, lat, group, region. Store the molten data in \texttt{msdat} and report first few rows of data.
+
+
+\item \label{plot-crime} The molten data frame \texttt{msdat} is now ready to be plotted. Create a plot showing USA state map, fill with value and facet\_wrap with variable. Please don't add any legend and make sure that faceting labels are identified so that we can compare the facetted plots.
+
+\item Now examine the plot you have generated in question (\ref{plot-crime}) and answer the following questions based on what you see in the plot.
+
+\begin{enumerate}
+\item For each of the crimes, name two states with the highest crime rate.\\
+
+\item Do you think larger urban population is an indicative of larger murder rate? Why or why not? \\
+
+\end{enumerate}
+
+\item In question (\ref{standardize-rate}) we standardized the crime rates. Why do you think we did this? Explain what would happen if we would not do this.
+
+\item In question (\ref{order-data}) we ordered the data after merging. Why do you think we have to order? Explain what would happen if we would not order.
+
+\end{enumerate}
+
+\item For the following questions please use data frame \texttt{tips} 
+
+\begin{enumerate}
+
+\item \label{bar} Create a bar chart that shows average tip by day.
+
+
+\item Compute the average tip, total tip and average size grouped by smoker and day. i.e.,  For each combination of smoker and day you should have a row of these summaries. Report the result in a nice table.
+
+
+\item \label{bar-facet} Create a bar chart that shows average tip by day and also faceted by smoker.
+
+
+\item In questions \ref{bar} and \ref{bar-facet} we plotted the summary of data which does not show us the whole picture. In practice we like to see the whole data. What plot do you suggest to serve the same purpose similar to what we did in question \ref{bar-facet}? In other words, what would be a better plot to show tips by day and facetted by smoker? Please produce that plot and include your codes.
+
+\end{enumerate}
+
+\item Life expectancy data for four countries are obtained from the world bank database which you will find on blackboard. It contains life expectancy in years for different genders. Download the data from the blackboard and save it on your hard drive. Now answer the following questions. 
+
+\begin{enumerate}
+
+\item Read the file from your hard drive and display first few rows of the data. 
+
+\item \label{life} Generate a plot showing trend line of life expectancy over different year. Color them by sex and facet by country. Include your code and the plot.
+
+\item Explain what interesting features you notice in the plot of question \ref{life}.
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+\end{document}

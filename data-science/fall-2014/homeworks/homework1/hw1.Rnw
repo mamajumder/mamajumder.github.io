@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[vmargin=1in,hmargin=1in]{geometry}
+\begin{document}
+
+\begin{center}
+\large \textsc{Homework 1} \\
+STAT 4410/8416 Section 001\\
+\textsc{Fall 2014}\\
+Due: September 12, 2014 by midnight
+\normalsize
+\end{center}
+
+
+
+\begin{enumerate}
+\item \begin{enumerate} 
+     \item What is data science?
+     \item Explain with an example what you mean by data product.
+     \item Carefully read the Cleveland's paper shown in lecture 2 and discuss what he suggested about the field of statistics and data science.
+     \item Explain in a short paragraph how data science is different from computer science.
+\end{enumerate}     
+\item In our \textbf{R} class we created the following function to get the square of a number. The function is written such that it gives us a text output \texttt{Big number} if the input is more than 100.
+<<>>=
+getSquare <- function(x){
+  if(x>100) 
+    return("Big number") else
+      return(x^2)
+}
+@
+We checked that the function is working as expected since we have 
+<<>>=
+getSquare(5)
+getSquare(500)
+@
+But the function does not work as expected for the following case. Instead of giving `Big number' as an output it provides the actual square.
+<<warning=FALSE>>=
+x <- c(25,200)
+getSquare(x)
+@
+
+Explain what is going wrong here. Also give a solution of this problem.
+
+\item Write a program that will do the following. Include your codes and necessary outputs to demonstrate your work.
+
+\begin{enumerate}
+  \item \label{exp-hist} Generate 90000 random numbers from an exponential distribution with mean 30 and store these numbers in a vector called myVector. \textbf{Report} a histrogram of the numbers you just generated.
+  \item Convert myVector into a matrix of 900 columns and assign it to an object called myMatrix. \textbf{Report} the dimension of myMatrix.
+  \item \label{mean-hist} Compute the column means of myMatrix. \textbf{Report} a histogram of those column means.
+  \item Explain why the two histograms you have created in questions (\ref{exp-hist}) and (\ref{mean-hist}) are different in shapes.
+\end{enumerate}
+
+
+\item What are the very first few steps one should do once data is loaded onto \textbf{R}? Demonstrate that by loading tips data from http://www.ggobi.org/book/data/tips.csv
+
+\end{enumerate}
+
+\end{document}

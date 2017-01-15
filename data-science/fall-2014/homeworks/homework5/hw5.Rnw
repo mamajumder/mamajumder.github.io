@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage[vmargin=1in,hmargin=1in]{geometry}
+\usepackage{booktabs}
+%\usepackage[utf8x]{inputenc}
+\begin{document}
+
+<<include=FALSE>>=
+opts_chunk$set(fig.align='center', message=FALSE, warnings=FALSE, cache=FALSE)
+@
+
+\begin{center}
+\large \textsc{Homework 5} \\
+STAT 4410/8416 Section 001\\
+\textsc{Fall 2014}\\
+Due: November 25, 2014 by midnight
+\normalsize
+\end{center}
+
+\begin{enumerate}
+
+\item {\bf Scrapping HTML data:} We often obtain data from Wikipedia. This exercise will guide us to collect some data about the native speakers of some common languages. The information can be obtained from the following link.\\
+
+http://en.Wikipedia.org/wiki/List\_of\_languages\_by\_number\_of\_native\_speakers \\
+
+
+
+Now answer the questions below.
+
+\begin{enumerate}
+
+\item Read all the HTML tables available in the above link and store the result in an object called \texttt{tables}.
+
+
+
+\item Now notice that the table in this link does not have any ID to specifically get the data from. But if you examine the source of the page, the first table is the data table. Thus we pick first table in the list of tables as our data. Store the data of first table in an object called \texttt{datRaw}. 
+
+
+
+\item We are particularly interested about columns 2 and 3 of \texttt{datRaw}. Subset columns 2 and 3 of \texttt{datRaw} and store the data in \texttt{dat}. Give the column names as language, nativeSpeaker. Display some data from \texttt{dat}.
+
+
+
+\item Notice that the data is not clean. We have a `*' in the number of native speaker. Also for Arabic and the Spanish, the number just messed up. We have to carefully review the data before we can use it. But first let us remove the  `*' from column 2 and make the column numeric. Also notice in the first column we have some non-english character that we don't want to print. Clean the data and store it in \texttt{cleanDat}. Display some cleaned data. 
+
+
+
+\item Now let us plot the data to show language wise ranks and their relative position. For this we plan to select only top 20 languages based on number of speakers. Generate a bar chart showing the top 20 languages. Order the bars according to the number of speakers.
+
+
+
+\end{enumerate}
+
+
+\item {\bf Working with databases:} For this exercise we will use \texttt{MySQL} database available in the data science lab or the \texttt{datascienceVM}. Answer the following questions.
+
+\begin{enumerate}
+
+\item Write down the connection string that would establish a connection to the \texttt{MySQL} database \texttt{trainingDB}.
+
+
+
+\item \label{q:sql} Write down a \texttt{SQL} command to select pclass, sex, survived and their average age from the titanic table. Store the selected data in data frame \texttt{avgAge} and display all the aggregated data.
+
+
+
+\item Now generate a line plot showing average age vs pclass colored by survived and faceted by sex.
+
+
+
+
+\item Use the package \texttt{dplyr} to obtain the same result as you did in question \ref{q:sql}. Display the results and the underlying \texttt{SQL} command used by \texttt{dplyr}.
+
+
+
+
+\item Find the name, age, sex and pclass of the 5 oldest and 5 youngest persons who died. Remove the people whose age information are not available for this computation.
+
+
+
+
+\end{enumerate}
+
+
+\item {\bf Exploring data:} Explore the crime data by downloading it from the blackboard. Provide nice tables and some plots that explain some important features revealed from the data. Discuss what you have found.
+
+
+
+
+\end{enumerate}
+
+\end{document}
+
+

@@ -1,0 +1,154 @@
+\documentclass{article}
+\usepackage[vmargin=1in,hmargin=1in]{geometry}
+\usepackage{booktabs}
+%\usepackage[utf8x]{inputenc}
+\begin{document}
+
+<<include=FALSE>>=
+opts_chunk$set(fig.align='center', message=FALSE, warnings=FALSE, cache=FALSE)
+@
+
+\begin{center}
+\large \textsc{Homework 3} \\
+STAT 4410/8416 Section 001\\
+\textsc{Fall 2014}\\
+Due: October 12, 2014 by midnight
+\normalsize
+\end{center}
+
+\begin{enumerate}
+
+\item {\bf Regular expression:} Write a regular expression to match patterns in the following strings. Demonstrate that your regular expression indeed matched that pattern by including codes and results. Carefully review how the first problem is solved for you.
+
+\begin{enumerate}
+
+\item We have a vector \texttt{vText} as follows. Write a regular expression that matches \texttt{g, og, go or ogo} in \texttt{vText} and replace the matches with dots.
+
+<<>>=
+vText <- c('google','logo','dig', 'blog', 'boogie' )
+@
+{\bf Answer:}
+<<>>=
+pattern <- 'o?go?'
+gsub(pattern, '.', vText)
+@
+
+
+\item Replace only the 2 or 3 digit numbers with the word \texttt{found} in the following vector. Please make sure that 4, 5 or 1 digit numbers do not get changed.
+<<>>=
+vPhone <- c('35','6783','345', '20', '46349', '8' )
+@
+
+
+\item Replace all the characters that are not among the 26 English characters or a space. Please replace with an empty spring.
+<<>>=
+myText <- "#y%o$u @g!o*t t9h(e) so#lu!tio$n c%or_r+e%ct"
+@
+
+
+\item In the following text, replace all the words that are exactly 3 characters long with triple dots `...'
+
+<<>>=
+myText <- "All the three character words should be gone now"
+@
+
+\item Extract all the three numbers embedded in the following text.
+
+<<>>=
+bigText <- 'There were three 20@14 numbers hidden in 500 texts'
+@
+
+
+\item Extract all the letters of the following sentence and show that it contains all the 26 letters. 
+
+<<>>=
+myText <- 'the quick brown fox jumps over the lazay dog'
+@
+
+\end{enumerate}
+
+
+\item Download the sample of a big data from blackboard. Note that the data is in csv format and compressed for easy handling. Now answer the following questions.
+
+\begin{enumerate}
+
+\item \label{select-few} Read the data and select only the columns that contains the word `human'. Store the data in an object \texttt{dat}. Report first few rows of your data.
+
+\item The data frame \texttt{dat} should have 5 columns. Rename the column names keeping only the last character of the column names. So each column name will have only one character. Report first few rows of your data now.
+
+\item Compute and report the means of each columns group by column b in a nice table.
+
+\item Change the data into long form using id=`b' and store the data in \texttt{mdat}. Report first few rows of data.
+
+\item The data frame \texttt{mdat} is now ready for plotting. Generate density plots of value, color and fill by variable and facet by b.
+
+
+\item The data set \texttt{bigDataSample.csv} is a sample of much bigger data set. Here we read the data set and then selected the desired column. Do you think it would be wise do the same thing with the actual larger data set? Explain how you will solve this problem of selecting few columns (as we did in question \ref{select-few}) without reading the whole data set first. Demonstrate that showing your codes.
+
+{\bf Answer:} We can use data table and read zero rows so that we only read the column names. After that we will pick the column names that contains the word 'human'. Finally we read only the few columns of the data.
+
+
+\end{enumerate}
+
+
+\item {\bf Extracting data from web:} Our plan is to extract data from web sources. This includes email addresses, phone numbers or other useful data. The function \texttt{readLines()} is very useful for this purpose.
+
+\begin{enumerate}
+
+\item Please read all the text in http://www.unomaha.edu/mahbubulmajumder/index.html and store your texts in \texttt{myText}. Show first few rows of \texttt{myText} and examine the structure of the data.
+
+
+
+\item Now write a regular expression that would extract all the emails from \texttt{myText}. Include your codes and display the results that show only the email addresses and nothing else.
+
+
+
+\item Now we want to extract all the phone/fax numbers in \texttt{myText}. Write a regular expression that would do this. Demonstrate your codes showing the results. 
+
+
+
+
+\item The link of ggplot2 documentation is http://docs.ggplot2.org/current/ and we would like to get the list of ggplot2 geoms from there. Write a regular expression that would extract all the geoms names (geom\_bar is one of them) from this link and display the unique geoms. How many unique geoms does it have?
+
+
+\end{enumerate}
+
+\item Download \texttt{lincoln-last-speech.txt} from the blackboard which contains the Lincoln's last public address. Now answer the following questions and include your codes. 
+
+\begin{enumerate}
+
+\item Read the text and store the text in \texttt{lAddress}. Show the first 70 characters from the first element of the text.
+
+
+\item Now we are interested in the words used in his speech. Extract all the words from \texttt{lAddress}, convert all of them to lower case and store the result in \texttt{vWord}. Display first few words.
+
+
+
+\item The words like `am', `is', `my' or `through' are not much of our interest and these types of words are called stop-words. The package `tm' has a function called \texttt{stopwords()}. Get all the English stop words and store them in \texttt{sWord}. Display few stop words in your report.
+
+
+
+\item Remove all the \texttt{sWord} from \texttt{vWord} and store the result in \texttt{cleanWord}. Display first few clean words.
+
+
+
+\item \texttt{cleanWord} contains all the cleaned words used in Lincoln's address. We would like to see which words are more frequently used. Find 15 most frequently used clean words and store the result in \texttt{fWord}. Display first 5 words from \texttt{fWord} along with their frequencies.
+
+
+\item \label{coord} Construct a bar chart showing the count of each words for the 15 most frequently used words. Add a layer `\texttt{+coord\_flip()}' with your plot.
+
+
+\item What is the reason for adding a layer `\texttt{+coord\_flip()}' with the plot in question (\ref{coord}). Explain what would happen if we would not have done that.
+
+\item The plot in question (\ref{coord}) uses bar plot to display the data. Can you think of another plot that delivers the same information but looks much simpler? Demonstrate your answer by generating such a plot. 
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+\end{document}
