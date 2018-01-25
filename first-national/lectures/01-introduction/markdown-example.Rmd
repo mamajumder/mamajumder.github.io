@@ -1,0 +1,67 @@
+---
+title: "A Template to Create Reproducible Document Using Rmarkdown and Knitr"
+author: "Mahbubul Majumder, PhD"
+date: "Jan 14, 2018"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+  fig_caption: yes
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. Notice the source file extension is `.Rmd`. You can `Knit` this file from `RStudio` and produce the output in either HTML or PDF or MS Word format. Viewing the actual markdown syntax in `.Rmd` file will help you understand how this file is created.
+
+## Basic functions
+
+We use asterisk mark to emphasize the words such as single `*` for *italics* and double `**` for **bolds**.
+
+We use dash mark to create a list.
+
+- item 1
+- item 2
+- item 3 
+
+We can also create ordered list by numbering them as follows
+
+1. list 1
+2. list 2
+3. list 3
+
+```
+We use back ticks to create
+a block of codes
+```
+
+## Embedding `R` codes
+
+If we want to embed some `R` codes we can do it as below. This is one of the powers `R` package `kintr` brought for us. We can control the size of the figure in knitr code chunk option. 
+```{r, fig.width=5, fig.height=4, fig.align='center'}
+library(ggplot2)
+ggplot(mtcars, aes(hp, mpg)) +
+  geom_point()
+```
+
+
+We can embed inline `R` codes to display results in a line. Such as the number of records in dataframe women is `r nrow(women)`.
+
+We use function `kable()` to display a table of data
+```{r}
+knitr::kable(head(mtcars, 10))
+```
+
+## Math Equation
+
+We can embed mathematical equations. For inline equation we use single `$` sign such as $var(\bar y) =\sigma^2 /n$. For standalone equation we use double `$$` as below
+$$f(x) = \frac 1{\sqrt{2\pi \sigma^2}}e^{-\frac 1 {2\sigma^2}(x-\mu)^2}$$
+
+## Adding Bibliography
+We can add bibliography and cite it. For example if we want to cite `knitr` we just do it as this [^1]. If we want to cite other references we can do it as this[^2].
+
+[^1]: Dynamic Documents with R and knitr by Yihui Xie.
+[^2]: knitr showcase, examples from other users http://yihui.name/knitr/demo/showcase/
+
+
+
+
+
+
