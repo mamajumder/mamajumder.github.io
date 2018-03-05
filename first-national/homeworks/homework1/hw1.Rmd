@@ -1,0 +1,42 @@
+---
+title: "Homework 1"
+author: "Data Science at First National Bank, Spring 2018"
+date: "Due on Mar 20, 2018"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, cache=TRUE)
+```
+
+
+1. **Diamond cuts** For this problem we will use diamonds data from ggplot2 package. If you load the package the data set will be available.
+    a. Generate a scatter plot of price vs carat
+    b. Color the scatter plot by cut
+    c. Show smoothed lines using method 'loess'
+    d. Facet the plot based on clarity
+    e. Now generate a side by side boxplot of price by cut. For which cut does the median price of diamond appear to be the highest?
+
+
+2. **USA crimes** Download USA crimes data from [github](http://mamajumder.github.io/first-national/data/usaCrimes.csv). Use the data to answer the following questions.
+    a. Load the data and display first few rows
+    b. Generate a scatterplot showing murder vs rape for all states
+    c. Show the same plot as you did in (b) for year 1981 and point size proportional to the popuation.
+    d. Show the same plot as you did in (c) for year 1981 and fill the points with color proportional to robbery.
+    e. Convert the plot in (d) into an interactive plot to show the state names. Which state shows most robbery or murder or rape?
+    f. In (e) we generated the plot for only 1981. We want to see the same plot over all the years. For this generate an animated movie over years to show how the situations change over time. Which state do you think shows the most changes.
+    g. Show the state population of 1981 on USA state map using color.
+    h. Show the state map as you did for 1981 for all the years in an animated movie. Which state shows the change in population the most over the years?
+
+
+
+3. **Shape files for maps** Download census track data and shape file for Nebraska from [IRE web site](http://census.ire.org/data/bulkdata.html). We are particularly interested in the distribution of median age in different census tracks of Nebraska.
+    a. Show median age of each track on Nebraska map
+    b. Show the same plot on top of google map as a layer. Which locations do you think most younger people live?
+
+
+
+
+
