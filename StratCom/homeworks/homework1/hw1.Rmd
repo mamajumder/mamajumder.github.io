@@ -1,0 +1,24 @@
+---
+title: "Homework 1"
+author: "Data Science at StratCom, Spring 2019"
+date: "Due on February 13, 2019"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, cache=TRUE)
+```
+
+
+1. **Diamond cuts** For this problem we will use diamonds data from ggplot2 package. If you load the package the data set will be available.
+    a. Generate a scatter plot of price vs carat
+    b. Color the scatter plot by cut
+    c. Show smoothed lines using method 'loess'
+    d. Facet the plot based on clarity
+    e. Now generate a side by side boxplot of price by cut. For which cut does the median price of diamond appear to be the highest?
+
+
+
+
