@@ -1,0 +1,25 @@
+---
+title: "Homework 2"
+author: "Data Science at StratCom, Spring 2019"
+date: "Due on Feb 20, 2019"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, cache=TRUE)
+```
+
+1. **USA crimes** Download USA crimes data from [github](http://mamajumder.github.io/first-national/data/usaCrimes.csv). Use the data to answer the following questions.
+    a. Load the data and display first few rows
+    b. Generate a scatterplot showing murder vs rape for all states
+    c. Show the same plot as you did in (b) for year 1981 and point size proportional to the popuation.
+    d. Show the same plot as you did in (c) for year 1981 and fill the points with color proportional to robbery.
+    e. Convert the plot in (d) into an interactive plot to show the state names. Which state shows most robbery or murder or rape?
+    f. In (e) we generated the plot for only 1981. We want to see the same plot over all the years. For this generate an animated movie over years to show how the situations change over time. Which state do you think shows the most changes.
+    g. Show the state population of 1981 on USA state map using color.
+    h. Show the state map as you did for 1981 for all the years in an animated movie. Which state shows the change in population the most over the years?
+
+
+
