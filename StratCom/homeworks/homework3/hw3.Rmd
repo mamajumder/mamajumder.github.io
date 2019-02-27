@@ -1,0 +1,35 @@
+---
+title: "Homework 3"
+author: "Data Science at StratCom, Spring 2019"
+date: "Due on Mar 6, 2019"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, cache=TRUE)
+```
+
+  
+1. Which plot do we generate to display relationship between 
+    a. Two quantitative variables
+    b. One quantitative and Categorical variable
+    c. Two categorical variable
+    d. One categorical vs many variables (regardless of type)
+
+2. We have three variables X, Y, Z of which Y is response variable. What plot will show a two way interaction effect of X and Z on Y if
+    a. one of them are quantitative and the other is categorical
+    b. both of them are categorical
+    c. both of them are quantitative
+    
+3. In class we presented how to reorganize data to display and generated a scatter plot of French fries data to show the relationship between replication 1 and 2. Generate and provide a similar plot that shows relationships between time 1 and 10 for each of the sensory attributes. Use any software including excel, if possible. The following `R` code will load `french_fries` data frame on R. You can save it as a CSV file to use on other software.
+```{r}
+library(reshape2)
+head(french_fries)
+```
+
+
+
+
+
