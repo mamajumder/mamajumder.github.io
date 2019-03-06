@@ -1,0 +1,21 @@
+---
+title: "Homework 4"
+author: "Data Science at StratCom, Spring 2019"
+date: "Due on Mar 29, 2019"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, cache=TRUE)
+```
+
+  
+Download Omaha Crime Data [omaha-crimes.csv](http://mamajumder.github.io/data-science/data/omaha-crimes.csv) and plot it on Omaha area map to explore the data interactively.
+
+1. Color points on the map showing the types of crime
+2. Which area of Omaha shows most of the crimes?
+
+
+
