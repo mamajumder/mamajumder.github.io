@@ -1,0 +1,22 @@
+---
+title: "Homework 5"
+author: "Data Science at StratCom, Spring 2019"
+date: "Due on Mar 29, 2019"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, cache=TRUE)
+```
+
+  
+In class we have acreated a dashboard. Start with this dashboard and add the following features
+
+1. Add a sidebar menue item and call it `My Dynamic Table`
+2. In dashboard body add a tabItem called `dTable`
+3. In server write codes to display `mtcars` data table in the tabItem you created.
+
+
+
