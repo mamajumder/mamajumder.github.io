@@ -1,0 +1,900 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "48wg-fkab",
+      "name" : "Average Salary by Job Classification",
+      "assetType" : "dataset",
+      "averageRating" : 0,
+      "category" : "Human Resources",
+      "createdAt" : 1591790010,
+      "description" : "This Dataset indicates average salary by position title and grade for full-time regular employees. Data excludes elected, appointed, non-merit and temporary employees. Underfilled positions are also excluded from the dataset.\r\nUpdate Frequency : Annually",
+      "displayType" : "table",
+      "downloadCount" : 2060,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 34377507,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1591790180,
+      "publicationGroup" : 17214688,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1591805870,
+      "rowsUpdatedBy" : "ajn4-zy65",
+      "tableId" : 17214688,
+      "totalTimesRated" : 0,
+      "viewCount" : 1908,
+      "viewLastModified" : 1680566223,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1593090063,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 2361237,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1593090063,
+        "targetAudience" : "public",
+        "workflowId" : 2274,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "endedAt" : 1593090063,
+          "failureCount" : 0,
+          "startedAt" : 1593090063,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "qzhb-tftn",
+          "displayName" : "Kathy Luh"
+        }
+      } ],
+      "clientContext" : {
+        "clientContextVariables" : [ ],
+        "inheritedVariables" : { }
+      },
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 473605852,
+        "name" : "Position Title",
+        "dataTypeName" : "text",
+        "description" : "The duties and responsibilities which make up the work performed by an employee.",
+        "fieldName" : "position_title",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 104607525,
+        "width" : 382,
+        "cachedContents" : {
+          "non_null" : "321",
+          "largest" : "Work Force Leader IV",
+          "null" : "0",
+          "top" : [ {
+            "item" : "Senior Executive Administrative Aide",
+            "count" : "1"
+          }, {
+            "item" : "Security Officer III (Sergeant)",
+            "count" : "1"
+          }, {
+            "item" : "Deputy Sheriff Sergeant",
+            "count" : "1"
+          }, {
+            "item" : "Firefighter/Rescuer III",
+            "count" : "1"
+          }, {
+            "item" : "Emergency Management Specialist I",
+            "count" : "1"
+          }, {
+            "item" : "Management Services Supervisor",
+            "count" : "1"
+          }, {
+            "item" : "Accountant/Auditor Supervisor",
+            "count" : "1"
+          }, {
+            "item" : "Urban District Public Service and Maintenance Team Supervisor",
+            "count" : "1"
+          }, {
+            "item" : "Safety and Training Supervisor",
+            "count" : "1"
+          }, {
+            "item" : "Accountant/Auditor I",
+            "count" : "1"
+          }, {
+            "item" : "Medical Doctor Psychiatrist IV",
+            "count" : "1"
+          }, {
+            "item" : "Public Safety Reporting Aide II",
+            "count" : "1"
+          }, {
+            "item" : "Public Health Advisor",
+            "count" : "1"
+          }, {
+            "item" : "Recreation Coordinator",
+            "count" : "1"
+          }, {
+            "item" : "Warehouse Assistant Supervisor",
+            "count" : "1"
+          }, {
+            "item" : "Forensics Specialist II",
+            "count" : "1"
+          }, {
+            "item" : "Information Technology Technician I",
+            "count" : "1"
+          }, {
+            "item" : "Correctional Specialist IV",
+            "count" : "1"
+          }, {
+            "item" : "Community Health Clinic Technician Leader",
+            "count" : "1"
+          }, {
+            "item" : "Forensic Firearms/Toolmark Examiner",
+            "count" : "1"
+          } ],
+          "smallest" : "Abandoned Vehicle Code Enforcement Specialist",
+          "count" : "321",
+          "cardinality" : "321"
+        },
+        "format" : { }
+      }, {
+        "id" : 473605853,
+        "name" : "Position Class Code",
+        "dataTypeName" : "number",
+        "description" : "A subdivision of an occupational class consisting of positions similar as to specialized line of work and qualification requirements.",
+        "fieldName" : "position_class_code",
+        "position" : 2,
+        "renderTypeName" : "number",
+        "tableColumnId" : 104607526,
+        "width" : 173,
+        "cachedContents" : {
+          "non_null" : "321",
+          "largest" : "206513",
+          "null" : "0",
+          "top" : [ {
+            "item" : "3149",
+            "count" : "1"
+          }, {
+            "item" : "117",
+            "count" : "1"
+          }, {
+            "item" : "204",
+            "count" : "1"
+          }, {
+            "item" : "2412",
+            "count" : "1"
+          }, {
+            "item" : "1166",
+            "count" : "1"
+          }, {
+            "item" : "4050",
+            "count" : "1"
+          }, {
+            "item" : "205229",
+            "count" : "1"
+          }, {
+            "item" : "5325",
+            "count" : "1"
+          }, {
+            "item" : "3074",
+            "count" : "1"
+          }, {
+            "item" : "5112",
+            "count" : "1"
+          }, {
+            "item" : "1165",
+            "count" : "1"
+          }, {
+            "item" : "100547",
+            "count" : "1"
+          }, {
+            "item" : "4111",
+            "count" : "1"
+          }, {
+            "item" : "4533",
+            "count" : "1"
+          }, {
+            "item" : "109270",
+            "count" : "1"
+          }, {
+            "item" : "3067",
+            "count" : "1"
+          }, {
+            "item" : "1012",
+            "count" : "1"
+          }, {
+            "item" : "1152",
+            "count" : "1"
+          }, {
+            "item" : "202420",
+            "count" : "1"
+          }, {
+            "item" : "112",
+            "count" : "1"
+          } ],
+          "smallest" : "110",
+          "count" : "321",
+          "cardinality" : "321"
+        },
+        "format" : {
+          "noCommas" : "true",
+          "align" : "center"
+        }
+      }, {
+        "id" : 473605871,
+        "name" : "Grade",
+        "dataTypeName" : "text",
+        "description" : "Numerical designation which identifies the range of difficulty and responsibility, and level of qualification requirements within respectice position titles. ",
+        "fieldName" : "grade",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 104607527,
+        "width" : 118,
+        "cachedContents" : {
+          "non_null" : "321",
+          "largest" : "P5",
+          "null" : "0",
+          "top" : [ {
+            "item" : "21",
+            "count" : "26"
+          }, {
+            "item" : "18",
+            "count" : "26"
+          }, {
+            "item" : "23",
+            "count" : "23"
+          }, {
+            "item" : "20",
+            "count" : "23"
+          }, {
+            "item" : "19",
+            "count" : "19"
+          }, {
+            "item" : "25",
+            "count" : "19"
+          }, {
+            "item" : "24",
+            "count" : "18"
+          }, {
+            "item" : "16",
+            "count" : "17"
+          }, {
+            "item" : "26",
+            "count" : "16"
+          }, {
+            "item" : "17",
+            "count" : "14"
+          }, {
+            "item" : "15",
+            "count" : "13"
+          }, {
+            "item" : "14",
+            "count" : "11"
+          }, {
+            "item" : "22",
+            "count" : "11"
+          }, {
+            "item" : "13",
+            "count" : "10"
+          }, {
+            "item" : "28",
+            "count" : "9"
+          }, {
+            "item" : "27",
+            "count" : "5"
+          }, {
+            "item" : "12",
+            "count" : "4"
+          }, {
+            "item" : "32",
+            "count" : "4"
+          }, {
+            "item" : "9",
+            "count" : "4"
+          }, {
+            "item" : "30",
+            "count" : "3"
+          } ],
+          "smallest" : "10",
+          "count" : "321",
+          "cardinality" : "60"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      }, {
+        "id" : 473605889,
+        "name" : "Average of Base Salary",
+        "dataTypeName" : "text",
+        "description" : "Average Salary for full-time employees within respective grade and position title. ",
+        "fieldName" : "average_of_base_salary",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 104607528,
+        "width" : 199,
+        "cachedContents" : {
+          "non_null" : "321",
+          "largest" : "$99,871.66",
+          "null" : "0",
+          "top" : [ {
+            "item" : "$104,680.00",
+            "count" : "6"
+          }, {
+            "item" : "$99,852.00",
+            "count" : "6"
+          }, {
+            "item" : "$86,669.00",
+            "count" : "6"
+          }, {
+            "item" : "$78,902.00",
+            "count" : "5"
+          }, {
+            "item" : "$115,099.00",
+            "count" : "4"
+          }, {
+            "item" : "$109,761.00",
+            "count" : "3"
+          }, {
+            "item" : "$75,290.00",
+            "count" : "3"
+          }, {
+            "item" : "$90,848.00",
+            "count" : "2"
+          }, {
+            "item" : "$95,236.00",
+            "count" : "2"
+          }, {
+            "item" : "$120,703.00",
+            "count" : "2"
+          }, {
+            "item" : "$82,691.00",
+            "count" : "2"
+          }, {
+            "item" : "$80,489.13",
+            "count" : "1"
+          }, {
+            "item" : "$125,408.88",
+            "count" : "1"
+          }, {
+            "item" : "$71,414.74",
+            "count" : "1"
+          }, {
+            "item" : "$135,022.66",
+            "count" : "1"
+          }, {
+            "item" : "$55,954.17",
+            "count" : "1"
+          }, {
+            "item" : "$85,704.88",
+            "count" : "1"
+          }, {
+            "item" : "$90,703.19",
+            "count" : "1"
+          }, {
+            "item" : "$67,373.60",
+            "count" : "1"
+          }, {
+            "item" : "$91,340.08",
+            "count" : "1"
+          } ],
+          "smallest" : "$100,748.62",
+          "count" : "321",
+          "cardinality" : "291"
+        },
+        "format" : {
+          "align" : "right"
+        }
+      }, {
+        "id" : 473605890,
+        "name" : "Number of Employees",
+        "dataTypeName" : "number",
+        "description" : "Total Number of Employees within respective grade and position title. ",
+        "fieldName" : "number_of_employees",
+        "position" : 5,
+        "renderTypeName" : "number",
+        "tableColumnId" : 104607529,
+        "width" : 197,
+        "cachedContents" : {
+          "non_null" : "321",
+          "largest" : "811",
+          "null" : "0",
+          "top" : [ {
+            "item" : "1",
+            "count" : "56"
+          }, {
+            "item" : "2",
+            "count" : "38"
+          }, {
+            "item" : "3",
+            "count" : "30"
+          }, {
+            "item" : "4",
+            "count" : "25"
+          }, {
+            "item" : "5",
+            "count" : "20"
+          }, {
+            "item" : "6",
+            "count" : "14"
+          }, {
+            "item" : "8",
+            "count" : "10"
+          }, {
+            "item" : "7",
+            "count" : "8"
+          }, {
+            "item" : "9",
+            "count" : "7"
+          }, {
+            "item" : "10",
+            "count" : "6"
+          }, {
+            "item" : "11",
+            "count" : "5"
+          }, {
+            "item" : "18",
+            "count" : "5"
+          }, {
+            "item" : "26",
+            "count" : "5"
+          }, {
+            "item" : "12",
+            "count" : "5"
+          }, {
+            "item" : "21",
+            "count" : "5"
+          }, {
+            "item" : "20",
+            "count" : "4"
+          }, {
+            "item" : "15",
+            "count" : "4"
+          }, {
+            "item" : "14",
+            "count" : "4"
+          }, {
+            "item" : "23",
+            "count" : "3"
+          }, {
+            "item" : "22",
+            "count" : "3"
+          } ],
+          "smallest" : "1",
+          "count" : "321",
+          "cardinality" : "67"
+        },
+        "format" : {
+          "align" : "center"
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "rdfSubject" : "0",
+        "rdfClass" : "",
+        "custom_fields" : {
+          "Dataset Information" : {
+            "Departments" : "Human Resources, Office of",
+            "Update Frequency" : "Annually"
+          }
+        },
+        "rowLabel" : "",
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+      },
+      "owner" : {
+        "id" : "uruq-macm",
+        "displayName" : "svc dmesb",
+        "screenName" : "svc dmesb",
+        "type" : "interactive",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "uruq-macm",
+        "displayName" : "svc dmesb",
+        "screenName" : "svc dmesb",
+        "type" : "interactive",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "tags" : [ "human_resources", "employee", "salary", "average", "job", "position" ],
+      "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ "row-9ikq_jt7k_9npj", "00000000-0000-0000-B039-3F0391EDB634", 0, 1591805870, null, 1591805870, null, "{ }", "Information Technology Expert", "550", "32", "$146,925.34", "9" ]
+, [ "row-ubj6_rvzx~fmxu", "00000000-0000-0000-C521-00B4EB7D8379", 0, 1591805870, null, 1591805870, null, "{ }", "Accountant/Auditor II", "210", "21", "$82,742.44", "2" ]
+, [ "row-7w5e~7pad-b7mb", "00000000-0000-0000-EAEB-6CAFFF9DCECB", 0, 1591805870, null, 1591805870, null, "{ }", "Veterinary Assistant", "206513", "15", "$45,925.44", "2" ]
+, [ "row-nxts_33j9.9jic", "00000000-0000-0000-B6F1-BE2A7DF283E5", 0, 1591805870, null, 1591805870, null, "{ }", "Police Aide", "3506", "15", "$58,628.63", "15" ]
+, [ "row-gghp~6hqj.wmux", "00000000-0000-0000-A37D-5B902B8EB2D3", 0, 1591805870, null, 1591805870, null, "{ }", "ERP Functional Business Analyst", "100546", "30", "$133,797.25", "3" ]
+, [ "row-yriv_559d.ye8a", "00000000-0000-0000-9403-95963BB55088", 0, 1591805870, null, 1591805870, null, "{ }", "Alcohol Beverage Purchasing and Account Specialist", "8019", "18", "$68,834.54", "7" ]
+, [ "row-8cx4_jsaq~psxa", "00000000-0000-0000-19BD-D286FD8C7091", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Engineer Technician", "4031", "22", "$80,771.26", "2" ]
+, [ "row-wkmt~zshf.cpr8", "00000000-0000-0000-AA1D-2E08BCB95F1F", 0, 1591805870, null, 1591805870, null, "{ }", "Administrative Specialist III", "150", "23", "$91,031.27", "52" ]
+, [ "row-j25a-hmce.riqr", "00000000-0000-0000-C3D4-27E25E21189B", 0, 1591805870, null, 1591805870, null, "{ }", "Forensic Scientist", "3519", "25", "$95,330.74", "12" ]
+, [ "row-d8uq_h83k_6r9g", "00000000-0000-0000-61CE-197F825ADA3A", 0, 1591805870, null, 1591805870, null, "{ }", "Manager I", "110", "M1", "$182,281.86", "21" ]
+, [ "row-vska~bczv_f44q", "00000000-0000-0000-44B1-AB17BF075815", 0, 1591805870, null, 1591805870, null, "{ }", "Community Services Aide II", "622", "16", "$59,017.02", "4" ]
+, [ "row-9zhi_rijz~qc5c", "00000000-0000-0000-9B9E-9374423158E9", 0, 1591805870, null, 1591805870, null, "{ }", "Income Assistance Program Specialist III", "2015", "22", "$81,932.15", "29" ]
+, [ "row-aduf_t8az-kfy9", "00000000-0000-0000-3355-33B78EAA0A42", 0, 1591805870, null, 1591805870, null, "{ }", "Public Safety Emergency Communications Manager", "103091", "25", "$109,761.00", "4" ]
+, [ "row-rpch~8wj6.fhsd", "00000000-0000-0000-4256-2C18AEEC0323", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Librarian", "1137", "25", "$92,980.80", "10" ]
+, [ "row-6a7n~gfvn.qcx9", "00000000-0000-0000-6007-13E334122027", 0, 1591805870, null, 1591805870, null, "{ }", "Truck Driver/Warehouse Worker", "8112", "15", "$53,829.14", "38" ]
+, [ "row-rfxf~pnnd-r958", "00000000-0000-0000-4EBE-92936508DBB8", 0, 1591805870, null, 1591805870, null, "{ }", "Transportation Systems Technician III", "4122", "20", "$81,307.38", "3" ]
+, [ "row-n6mc.s6pe_h8ar", "00000000-0000-0000-E876-3271A4DF097E", 0, 1591805870, null, 1591805870, null, "{ }", "Public Service Worker IV", "5233", "14", "$47,432.32", "3" ]
+, [ "row-izg3~ww8n~9brc", "00000000-0000-0000-697A-360FC3CCF413", 0, 1591805870, null, 1591805870, null, "{ }", "Performance Management and Data Analyst III", "116", "28", "$95,783.59", "3" ]
+, [ "row-vnpm_e6b8~auax", "00000000-0000-0000-0B1B-D8227804DF83", 0, 1591805870, null, 1591805870, null, "{ }", "Public Safety Instructor", "3516", "20", "$85,347.94", "3" ]
+, [ "row-q2pu~j5ck_4z38", "00000000-0000-0000-F5E6-C60204840A72", 0, 1591805870, null, 1591805870, null, "{ }", "Correctional Team Leader - Captain", "3233", "C2", "$118,414.00", "5" ]
+, [ "row-8kf4~j639_sjyq", "00000000-0000-0000-5648-3F87F0D426C0", 0, 1591805870, null, 1591805870, null, "{ }", "Equipment Maintenance Crew Chief", "5007", "22", "$88,096.90", "20" ]
+, [ "row-c462-ax8j.hqp4", "00000000-0000-0000-E735-683E794F7E01", 0, 1591805870, null, 1591805870, null, "{ }", "Engineer Technician II", "4035", "18", "$66,054.39", "5" ]
+, [ "row-rqfp.cdgh~g8xj", "00000000-0000-0000-7899-E19A8C1CBE1F", 0, 1591805870, null, 1591805870, null, "{ }", "Telecommunications Technician", "3426", "18", "$78,902.00", "1" ]
+, [ "row-eu82.fcug-fy33", "00000000-0000-0000-EB5F-9BEAA5015002", 0, 1591805870, null, 1591805870, null, "{ }", "Emergency Management Specialist I", "200700", "24", "$82,270.14", "2" ]
+, [ "row-p3at_ezhu_ktgi", "00000000-0000-0000-9A8E-09BFC1C18513", 0, 1591805870, null, 1591805870, null, "{ }", "Safety and Training Instructor", "104465", "19", "$74,225.62", "3" ]
+, [ "row-8dxt-u42z_be43", "00000000-0000-0000-C4BD-DD89DB8CE63A", 0, 1591805870, null, 1591805870, null, "{ }", "Management and Budget Specialist II", "426", "22", "$89,716.68", "2" ]
+, [ "row-357c_vt4e~99ac", "00000000-0000-0000-C9B9-35AF03826ADB", 0, 1591805870, null, 1591805870, null, "{ }", "Deputy Sheriff Sergeant", "3528", "D1", "$102,047.83", "29" ]
+, [ "row-fc6v~yzh4_x8df", "00000000-0000-0000-FFC3-B862A143A601", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Architect", "4406", "28", "$126,584.00", "5" ]
+, [ "row-ccy9-8atf_k2dt", "00000000-0000-0000-3C82-A3BEF721C008", 0, 1591805870, null, 1591805870, null, "{ }", "Manager II", "111", "M2", "$160,257.48", "115" ]
+, [ "row-ytx2~8aw6-s6hb", "00000000-0000-0000-FE2F-2C022634827D", 0, 1591805870, null, 1591805870, null, "{ }", "Laboratory Assistant", "2412", "14", "$57,495.34", "2" ]
+, [ "row-wh6u-g5ya-cwyw", "00000000-0000-0000-CE93-ADFA9C1F7B0C", 0, 1591805870, null, 1591805870, null, "{ }", "Police Officer Candidate", "3086", "P1", "$52,904.25", "32" ]
+, [ "row-ejun_g4dh~vnkn", "00000000-0000-0000-A16B-75D0FF426513", 0, 1591805870, null, 1591805870, null, "{ }", "Welder", "5017", "18", "$78,902.00", "3" ]
+, [ "row-m8nb_n9cx_pwzr", "00000000-0000-0000-9672-60AAF38BED45", 0, 1591805870, null, 1591805870, null, "{ }", "Warehouse Assistant Supervisor", "8109", "20", "$82,908.58", "5" ]
+, [ "row-wdf8~kxb8~rfp5", "00000000-0000-0000-16E0-6F8B2E1BFDAA", 0, 1591805870, null, 1591805870, null, "{ }", "Assistant County Attorney III", "6106", "32", "$138,905.08", "31" ]
+, [ "row-6bmf~9d2z_d4yg", "00000000-0000-0000-1753-6D1172072BE8", 0, 1591805870, null, 1591805870, null, "{ }", "Self-Contained Breathing Apparatus Technician", "5020", "14", "$61,638.79", "1" ]
+, [ "row-zbz5~qq2u_s5nx", "00000000-0000-0000-3481-40CF4A307358", 0, 1591805870, null, 1591805870, null, "{ }", "Permit Technician III", "2260", "19", "$82,239.75", "8" ]
+, [ "row-rtjv~ec4z~kwgi", "00000000-0000-0000-434E-BE690FF6376B", 0, 1591805870, null, 1591805870, null, "{ }", "Background Screening Specialist", "3523", "21", "$90,085.99", "10" ]
+, [ "row-vuvq~s2ch~7kct", "00000000-0000-0000-97C1-C72244BDF97C", 0, 1591805870, null, 1591805870, null, "{ }", "Police District Station Assistant", "3500", "19", "$82,691.00", "6" ]
+, [ "row-6r9j~8f4h~6h28", "00000000-0000-0000-9A01-5544AD5CC3BC", 0, 1591805870, null, 1591805870, null, "{ }", "Security Officer II", "3534", "16", "$71,852.00", "1" ]
+, [ "row-v7v3~m27r~k4uy", "00000000-0000-0000-4ACF-21A130CA78B7", 0, 1591805870, null, 1591805870, null, "{ }", "Highway Inspector I", "4051", "19", "$70,944.02", "6" ]
+, [ "row-wxxd-y34b~7s9x", "00000000-0000-0000-5785-6ADCB5B3B931", 0, 1591805870, null, 1591805870, null, "{ }", "Deputy Sheriff Candidate", "3532", "G1", "$50,990.00", "6" ]
+, [ "row-k74r-33jn~g3yu", "00000000-0000-0000-BE7B-C7FEE90EE066", 0, 1591805870, null, 1591805870, null, "{ }", "Public Information Officer II", "810", "25", "$101,327.14", "6" ]
+, [ "row-t7xv~7w6a_qs4v", "00000000-0000-0000-8790-87FC70AF448A", 0, 1591805870, null, 1591805870, null, "{ }", "Public Safety Communications Specialist III", "3094", "19", "$69,267.86", "7" ]
+, [ "row-w7um-jne3~s2zc", "00000000-0000-0000-469F-1BB6FE7F9491", 0, 1591805870, null, 1591805870, null, "{ }", "Property Manager II", "5312", "24", "$104,680.00", "9" ]
+, [ "row-g4u8_3z96.wurv", "00000000-0000-0000-A0E7-ADA8BA1E6C27", 0, 1591805870, null, 1591805870, null, "{ }", "Paralegal Specialist", "6115", "23", "$86,822.92", "6" ]
+, [ "row-6dyb_yeyz_brbk", "00000000-0000-0000-AE3A-AC89A6F98A8F", 0, 1591805870, null, 1591805870, null, "{ }", "Information Technology Technician III", "555", "19", "$78,401.17", "11" ]
+, [ "row-hfqn.y56s-z2i2", "00000000-0000-0000-0E0A-94B7AF52327F", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Supply Technician", "9234", "17", "$69,617.43", "11" ]
+, [ "row-ptbu_m5bh-xwr5", "00000000-0000-0000-CDF2-6C5D6E684521", 0, 1591805870, null, 1591805870, null, "{ }", "Librarian I", "1152", "21", "$78,141.47", "23" ]
+, [ "row-dn6m-dabw~xbp9", "00000000-0000-0000-923B-84055BC4F7BB", 0, 1591805870, null, 1591805870, null, "{ }", "Legislative Attorney", "709", "32", "$126,370.51", "2" ]
+, [ "row-e7s2_6idr.4ybi", "00000000-0000-0000-BE8E-AEFE89D152DA", 0, 1591805870, null, 1591805870, null, "{ }", "Permitting and Code Enforcement Inspector III", "2215", "23", "$95,620.38", "51" ]
+, [ "row-sue7.t3hj-y497", "00000000-0000-0000-7139-A4349B416638", 0, 1591805870, null, 1591805870, null, "{ }", "Transportation Systems Technical Center Supervisor", "4115", "23", "$99,852.00", "2" ]
+, [ "row-rygr_2b8t.4twc", "00000000-0000-0000-9D8F-7EA8B398E591", 0, 1591805870, null, 1591805870, null, "{ }", "Librarian II", "1151", "24", "$87,630.90", "35" ]
+, [ "row-kptq-idzt~zzer", "00000000-0000-0000-8FFB-371C78B62640", 0, 1591805870, null, 1591805870, null, "{ }", "Plumber I", "5063", "17", "$67,066.90", "2" ]
+, [ "row-zsbb~yrid~snic", "00000000-0000-0000-6292-7679317E19FE", 0, 1591805870, null, 1591805870, null, "{ }", "Animal Services Officer III", "202273", "20", "$68,801.29", "8" ]
+, [ "row-wxqm~9aqt~atjf", "00000000-0000-0000-D3CA-DD4B03D87242", 0, 1591805870, null, 1591805870, null, "{ }", "Library Assistant Supervisor", "1163", "20", "$78,992.15", "19" ]
+, [ "row-h82g.2isz_7vdt", "00000000-0000-0000-03C1-EE7B6B7B64F7", 0, 1591805870, null, 1591805870, null, "{ }", "Psychologist Supervisor", "2500", "31", "$145,122.13", "1" ]
+, [ "row-5h7e.djah.xzer", "00000000-0000-0000-2ED5-C6C6BFB22509", 0, 1591805870, null, 1591805870, null, "{ }", "Gain Sharing Coordinator", "127", "26", "$115,099.00", "1" ]
+, [ "row-pyky_jekw_6yjr", "00000000-0000-0000-15F4-0D3F32636E4C", 0, 1591805870, null, 1591805870, null, "{ }", "Property Manager I", "5311", "21", "$90,848.00", "1" ]
+, [ "row-u7vk.vxsx~fh7r", "00000000-0000-0000-2927-A1BF1F953623", 0, 1591805870, null, 1591805870, null, "{ }", "Therapist II", "2754", "24", "$89,840.84", "85" ]
+, [ "row-9ub9~6ewb-p7g6", "00000000-0000-0000-8BDB-54B5F8D56E9A", 0, 1591805870, null, 1591805870, null, "{ }", "Correctional Specialist V", "3246", "26", "$113,647.77", "3" ]
+, [ "row-ak5j-ktdf_j5u8", "00000000-0000-0000-3D8F-72EA566FFEE5", 0, 1591805870, null, 1591805870, null, "{ }", "Licensed Practical Nurse - Correctional Facility", "2308", "18", "$78,297.07", "4" ]
+, [ "row-a4nm.bpkw_dj7x", "00000000-0000-0000-5626-D956D4C3D4AF", 0, 1591805870, null, 1591805870, null, "{ }", "Behavioral Health Associate Counselor (Alcohol & Drug)", "2760", "20", "$86,669.00", "8" ]
+, [ "row-i4kk_gz6w-mfx4", "00000000-0000-0000-0E1C-8C1F01CB4817", 0, 1591805870, null, 1591805870, null, "{ }", "Equipment Operator II", "5112", "15", "$63,093.70", "24" ]
+, [ "row-haxc-mwyb~fn6z", "00000000-0000-0000-ACB7-9203ACF4595F", 0, 1591805870, null, 1591805870, null, "{ }", "Legal Secretary II", "6113", "16", "$67,005.97", "5" ]
+, [ "row-nbi2-g3bj-n3ft", "00000000-0000-0000-6EC7-326855168EAF", 0, 1591805870, null, 1591805870, null, "{ }", "Resident Supervisor III", "3252", "22", "$93,887.40", "7" ]
+, [ "row-guqb~qsgm_7c35", "00000000-0000-0000-A701-4E5B4CB7BC74", 0, 1591805870, null, 1591805870, null, "{ }", "Community Health Clinic Technician", "2709", "15", "$55,461.12", "1" ]
+, [ "row-6cax~tsv6~qufa", "00000000-0000-0000-770F-58D237F73001", 0, 1591805870, null, 1591805870, null, "{ }", "Deputy Sheriff Lieutenant", "3527", "D2", "$114,357.58", "12" ]
+, [ "row-pg3y-p8ka~954n", "00000000-0000-0000-33E5-2E631735E30B", 0, 1591805870, null, 1591805870, null, "{ }", "Recreation Specialist", "1015", "21", "$79,172.47", "64" ]
+, [ "row-dj2h.7imr.yjsp", "00000000-0000-0000-2F31-D5938910C93A", 0, 1591805870, null, 1591805870, null, "{ }", "Fiscal and Policy Analyst III", "411", "28", "$120,241.74", "12" ]
+, [ "row-kjnc~xmra~pavm", "00000000-0000-0000-7935-297BC71948DF", 0, 1591805870, null, 1591805870, null, "{ }", "Code Enforcement Inspector III", "2224", "20", "$84,940.50", "4" ]
+, [ "row-q23p~8276~eni6", "00000000-0000-0000-FCA3-3CFA42CCC86B", 0, 1591805870, null, 1591805870, null, "{ }", "Administrative Specialist I", "152", "18", "$73,529.98", "28" ]
+, [ "row-kxgp-zvz8-a8yr", "00000000-0000-0000-D249-F86A9C7F45E2", 0, 1591805870, null, 1591805870, null, "{ }", "Correctional Dietary Officer II", "203229", "18", "$67,898.83", "14" ]
+, [ "row-rx45~64x6.rpn9", "00000000-0000-0000-250D-6A497ADC1786", 0, 1591805870, null, 1591805870, null, "{ }", "Library Assistant II", "1165", "16", "$62,066.37", "14" ]
+, [ "row-vvqk_fxuk_7wbw", "00000000-0000-0000-AD9A-81503D368CF5", 0, 1591805870, null, 1591805870, null, "{ }", "Library Associate", "1191", "18", "$61,301.28", "8" ]
+, [ "row-e4qx.axni_jmha", "00000000-0000-0000-D34F-65553857053C", 0, 1591805870, null, 1591805870, null, "{ }", "Office Services Coordinator", "9273", "16", "$66,270.43", "210" ]
+, [ "row-xymi_vw5m-tgwh", "00000000-0000-0000-723E-B1DDBDF809D5", 0, 1591805870, null, 1591805870, null, "{ }", "Police Sergeant", "3067", "A1", "$106,881.72", "157" ]
+, [ "row-ant7.2zx6-s46y", "00000000-0000-0000-168E-8ACD9DB024A8", 0, 1591805870, null, 1591805870, null, "{ }", "Transportation Systems Technician II", "4118", "18", "$78,902.00", "3" ]
+, [ "row-dxqr~d5y7_ir6p", "00000000-0000-0000-8724-A8006D53B642", 0, 1591805870, null, 1591805870, null, "{ }", "Income Assistance Program Specialist II", "2012", "20", "$73,668.96", "129" ]
+, [ "row-egjn-gat9-5jnr", "00000000-0000-0000-A2DF-5C34A426B92C", 0, 1591805870, null, 1591805870, null, "{ }", "OIG Investigative Analyst III", "723", "28", "$118,519.82", "3" ]
+, [ "row-z79n~hwer~pbq6", "00000000-0000-0000-7718-37C392ADCF1C", 0, 1591805870, null, 1591805870, null, "{ }", "Legislative Senior Aide III", "713", "26", "$86,452.38", "3" ]
+, [ "row-9ab9~jcax-eu49", "00000000-0000-0000-3657-4F857BC60115", 0, 1591805870, null, 1591805870, null, "{ }", "Engineer II", "4023", "22", "$88,899.24", "2" ]
+, [ "row-uxg6~yase.k2xz", "00000000-0000-0000-73F1-819C83B7DABA", 0, 1591805870, null, 1591805870, null, "{ }", "Inspection and Enforcement Field Supervisor", "2238", "23", "$87,437.65", "2" ]
+, [ "row-brg4.gpy7.yymr", "00000000-0000-0000-CA3C-E5EE65D95330", 0, 1591805870, null, 1591805870, null, "{ }", "Correctional Health Nurse II", "3266", "24", "$91,011.78", "18" ]
+, [ "row-vqf8.gkcc-x5tk", "00000000-0000-0000-992C-7B41A60B9F70", 0, 1591805870, null, 1591805870, null, "{ }", "Highway Construction Field Supervisor", "4030", "24", "$104,609.05", "5" ]
+, [ "row-vpak_ukpu.feei", "00000000-0000-0000-CA2A-54CC12ED1461", 0, 1591805870, null, 1591805870, null, "{ }", "Correctional Shift Commander - Lieutenant", "3235", "C1", "$106,803.86", "21" ]
+, [ "row-kck9-yjf4-c5xr", "00000000-0000-0000-A6B8-9731D74D72F7", 0, 1591805870, null, 1591805870, null, "{ }", "Transit Services Supervisor", "4456", "21", "$89,926.34", "3" ]
+, [ "row-i82d~2bge_5x7w", "00000000-0000-0000-8F58-52A663EACAD1", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Retirement Analyst", "100202", "26", "$113,681.54", "1" ]
+, [ "row-6s9c~khtn_pgug", "00000000-0000-0000-E91E-6F3D769D3FB2", 0, 1591805870, null, 1591805870, null, "{ }", "Management and Budget Specialist III", "424", "25", "$107,191.11", "25" ]
+, [ "row-qxst-kyr2.bby3", "00000000-0000-0000-BBA6-159CA334B721", 0, 1591805870, null, 1591805870, null, "{ }", "Revenue Counter Supervisor", "217", "15", "$67,893.70", "1" ]
+, [ "row-gxq5_35ep~4urs", "00000000-0000-0000-82BD-91BE39A43A96", 0, 1591805870, null, 1591805870, null, "{ }", "Work Force Leader II", "5212", "18", "$72,440.30", "26" ]
+, [ "row-uktf-ikjg_3m7y", "00000000-0000-0000-95DB-14ABBC6ED3A2", 0, 1591805870, null, 1591805870, null, "{ }", "District Supervisor", "5205", "24", "$96,095.29", "5" ]
+, [ "row-zptu~dw83.gn99", "00000000-0000-0000-66D6-EFA232530A6E", 0, 1591805870, null, 1591805870, null, "{ }", "Program Specialist II", "836", "21", "$83,144.25", "115" ]
+, [ "row-jbz5~cz4f~imzh", "00000000-0000-0000-13C5-FA281C08BCF8", 0, 1591805870, null, 1591805870, null, "{ }", "Insurance Fund Manager", "206", "26", "$115,099.00", "1" ]
+, [ "row-8dp5.yeta-5dq4", "00000000-0000-0000-3CF9-BB0A5DA3653F", 0, 1591805870, null, 1591805870, null, "{ }", "Transit Coordinator", "4462", "17", "$67,738.27", "34" ]
+, [ "row-h2ew_k7mb~vd8j", "00000000-0000-0000-E5C6-B7A6446B2FB5", 0, 1591805870, null, 1591805870, null, "{ }", "Animal Care Attendant", "203511", "14", "$46,312.18", "11" ]
+, [ "row-kfbe~rnh4_kt5g", "00000000-0000-0000-21D2-5C78177825FB", 0, 1591805870, null, 1591805870, null, "{ }", "Abandoned Vehicle Code Enforcement Specialist", "3503", "16", "$58,358.79", "4" ]
+, [ "row-s56r-cs8f~cpcb", "00000000-0000-0000-BB5D-4394E6FCE41C", 0, 1591805870, null, 1591805870, null, "{ }", "Dental Assistant", "2110", "14", "$62,539.74", "5" ]
+, [ "row-a9f3_rvdf-d45h", "00000000-0000-0000-C772-6C9236E651B9", 0, 1591805870, null, 1591805870, null, "{ }", "Investigator III", "643", "25", "$103,184.89", "23" ]
+, [ "row-vk4i.f5ri~bzum", "00000000-0000-0000-E614-FA338BF04F0B", 0, 1591805870, null, 1591805870, null, "{ }", "Public Service Craftsworker II", "205228", "17", "$73,851.70", "3" ]
+, [ "row-qsbj.r2he~p2cu", "00000000-0000-0000-4C77-144BBD06D695", 0, 1591805870, null, 1591805870, null, "{ }", "Telecommunications Specialist", "3410", "20", "$86,446.73", "5" ]
+, [ "row-gdxa~98xw.iyv3", "00000000-0000-0000-44F7-DA5B44A9ABD5", 0, 1591805870, null, 1591805870, null, "{ }", "Information and Referral Aide II", "200880", "16", "$48,339.71", "2" ]
+, [ "row-6s2m_sjpn~swrv", "00000000-0000-0000-66E1-159054F6418D", 0, 1591805870, null, 1591805870, null, "{ }", "Building Services Inspector", "5307", "12", "$54,934.79", "3" ]
+, [ "row-s3ym_vjvg.ukcp", "00000000-0000-0000-A6EA-738A4E5757FD", 0, 1591805870, null, 1591805870, null, "{ }", "Insurance Risk Analyst", "284", "24", "$104,680.00", "1" ]
+, [ "row-rryp-6m5k-hx26", "00000000-0000-0000-9AD5-2AD494E02A94", 0, 1591805870, null, 1591805870, null, "{ }", "Mail Clerk", "5190", "11", "$52,205.21", "7" ]
+, [ "row-q222~emtn_vrc6", "00000000-0000-0000-9CFE-C1A7C2BD5219", 0, 1591805870, null, 1591805870, null, "{ }", "Police Lieutenant", "3065", "A2", "$138,968.30", "37" ]
+, [ "row-d36w-xezk_nw8m", "00000000-0000-0000-6156-3E7551DFC754", 0, 1591805870, null, 1591805870, null, "{ }", "HVAC Mechanic I", "5083", "18", "$73,056.70", "9" ]
+, [ "row-w858-wavw.a78s", "00000000-0000-0000-D216-DA14415AD38E", 0, 1591805870, null, 1591805870, null, "{ }", "Major Maintenance Project Manager", "5026", "22", "$95,236.00", "9" ]
+, [ "row-2cp5-3bha.b8mx", "00000000-0000-0000-5D08-DC02EC563961", 0, 1591805870, null, 1591805870, null, "{ }", "Architect III", "4407", "25", "$99,871.66", "1" ]
+, [ "row-df22_53jy~g9py", "00000000-0000-0000-5E49-4E2B006B23F9", 0, 1591805870, null, 1591805870, null, "{ }", "Correctional Dietary Supervisor", "3227", "22", "$95,236.00", "2" ]
+, [ "row-yapz.43cb.ex3m", "00000000-0000-0000-4C07-8AE10200D4B3", 0, 1591805870, null, 1591805870, null, "{ }", "Occupational Safety and Health Specialist", "282", "25", "$109,761.00", "1" ]
+, [ "row-pjnq_ryf6.degp", "00000000-0000-0000-34C1-F3AA9C565027", 0, 1591805870, null, 1591805870, null, "{ }", "Accountant/Auditor III", "211", "23", "$97,574.06", "26" ]
+, [ "row-vv3i~vhmd.4r78", "00000000-0000-0000-E78A-2CF304CC7FB3", 0, 1591805870, null, 1591805870, null, "{ }", "Senior ERP Functional Business Analyst", "100547", "32", "$143,615.33", "2" ]
+, [ "row-sxwu-854p_tsdp", "00000000-0000-0000-C294-909FB25F624D", 0, 1591805870, null, 1591805870, null, "{ }", "Intergovernmental Relations Legislative Analyst", "730", "28", "$123,114.87", "3" ]
+, [ "row-4t9e_gihk~87ax", "00000000-0000-0000-087A-2E14A6E283EF", 0, 1591805870, null, 1591805870, null, "{ }", "Human Resources Specialist III", "121", "25", "$106,900.57", "18" ]
+, [ "row-eh8p~8587~qqvw", "00000000-0000-0000-7016-A78BFEA28A96", 0, 1591805870, null, 1591805870, null, "{ }", "Highway Inspector II", "4050", "22", "$86,605.72", "10" ]
+, [ "row-xwzy_nyg3.28ay", "00000000-0000-0000-D1EA-555C038BCE07", 0, 1591805870, null, 1591805870, null, "{ }", "Mechanic Instructor", "5008", "21", "$89,378.87", "3" ]
+, [ "row-qepv~a7dk_ipsn", "00000000-0000-0000-738E-668F957C82F2", 0, 1591805870, null, 1591805870, null, "{ }", "Customer Service Representative Supervisor", "100874", "21", "$62,428.38", "1" ]
+, [ "row-q7ev-2y8d-ctii", "00000000-0000-0000-673A-F193360DC9C8", 0, 1591805870, null, 1591805870, null, "{ }", "Public Health Dentist", "120003", "MD2", "$153,375.00", "1" ]
+, [ "row-g76e_cjw6_den7", "00000000-0000-0000-950B-0EE6613D8A5F", 0, 1591805870, null, 1591805870, null, "{ }", "Performance Management and Data Analyst II", "117", "25", "$78,972.80", "1" ]
+, [ "row-p2x9_n2ak_qinh", "00000000-0000-0000-76A2-B5C64B1328A4", 0, 1591805870, null, 1591805870, null, "{ }", "Transportation Contract Compliance Inspector II", "4071", "19", "$67,373.60", "4" ]
+, [ "row-2rv4.7vfz.stvc", "00000000-0000-0000-947C-C8521E907CF6", 0, 1591805870, null, 1591805870, null, "{ }", "Urban District Public Service Aide", "630", "10", "$47,060.51", "19" ]
+, [ "row-k24q-cc2t.thkf", "00000000-0000-0000-D2C6-7BA51AE1DF25", 0, 1591805870, null, 1591805870, null, "{ }", "Accountant/Auditor I", "212", "18", "$67,827.56", "2" ]
+, [ "row-zixj~iznm_nwre", "00000000-0000-0000-CE13-7DA8EAB7E83F", 0, 1591805870, null, 1591805870, null, "{ }", "Public Service Worker III", "5230", "12", "$52,560.73", "6" ]
+, [ "row-dvge_yhb4~sr7r", "00000000-0000-0000-82ED-AB1F06A6C39D", 0, 1591805870, null, 1591805870, null, "{ }", "Imaging Operator II", "9008", "11", "$46,236.41", "9" ]
+, [ "row-um9z-f8bu.3dwj", "00000000-0000-0000-61E5-63C011E0C14D", 0, 1591805870, null, 1591805870, null, "{ }", "Warehouse Equipment Operator", "8120", "13", "$55,317.90", "15" ]
+, [ "row-itse-gy49.svmz", "00000000-0000-0000-1EE7-35BE9C2C6B82", 0, 1591805870, null, 1591805870, null, "{ }", "Permitting and Code Enforcement Inspector II", "2216", "21", "$84,786.86", "3" ]
+, [ "row-brdv_phza-4c3v", "00000000-0000-0000-B51B-9C3228ECC9B3", 0, 1591805870, null, 1591805870, null, "{ }", "Liquor Store Assistant Manager", "8012", "18", "$66,899.31", "26" ]
+, [ "row-6fxa_3tds.sxw2", "00000000-0000-0000-4080-169A6B687356", 0, 1591805870, null, 1591805870, null, "{ }", "Psychologist", "2501", "29", "$132,277.69", "3" ]
+, [ "row-5h36.7v9c.fjic", "00000000-0000-0000-F364-B592B7D003E2", 0, 1591805870, null, 1591805870, null, "{ }", "Health Educator", "2711", "21", "$60,330.65", "1" ]
+, [ "row-vm95.w86r-rnhq", "00000000-0000-0000-D120-6C742AC7DCD9", 0, 1591805870, null, 1591805870, null, "{ }", "Deputy Sheriff Captain", "3525", "D3", "$133,622.17", "6" ]
+, [ "row-dnq5~prrm-geui", "00000000-0000-0000-889F-3B3E5C93A3B8", 0, 1591805870, null, 1591805870, null, "{ }", "Child Welfare Caseworker", "638", "23", "$99,852.00", "2" ]
+, [ "row-9g6b_bj7y_a8tr", "00000000-0000-0000-2715-06941F094CA4", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Investment Officer", "204", "39", "$171,350.49", "4" ]
+, [ "row-h4su-ds3w-rpum", "00000000-0000-0000-F45D-24003D64A694", 0, 1591805870, null, 1591805870, null, "{ }", "Public Administration Associate", "100130", "16", "$51,299.52", "3" ]
+, [ "row-2pdu.djun_f423", "00000000-0000-0000-D63C-735348EFB9B8", 0, 1591805870, null, 1591805870, null, "{ }", "Locksmith", "5047", "18", "$74,583.27", "2" ]
+, [ "row-8kbf_e7mr~6w4n", "00000000-0000-0000-F3EB-165E28BB0BA5", 0, 1591805870, null, 1591805870, null, "{ }", "Transit Information Systems Technician", "4458", "19", "$77,783.45", "4" ]
+, [ "row-zqt9.e7im-eqre", "00000000-0000-0000-38CA-3B5A93F14FE5", 0, 1591805870, null, 1591805870, null, "{ }", "Public Safety Emergency Communications Supervisor", "103092", "23", "$85,704.88", "16" ]
+, [ "row-rixu.zttb_xgpd", "00000000-0000-0000-8E51-B3D2DEF14D4C", 0, 1591805870, null, 1591805870, null, "{ }", "Refuse Disposal Cashier", "4321", "13", "$58,770.52", "6" ]
+, [ "row-8586.b3ta.6jh6", "00000000-0000-0000-F8D4-634E4C6B18E8", 0, 1591805870, null, 1591805870, null, "{ }", "Community Outreach Manager", "192", "28", "$113,240.32", "8" ]
+, [ "row-ffy2.zbbx_aipj", "00000000-0000-0000-EC40-A674AFDC6F79", 0, 1591805870, null, 1591805870, null, "{ }", "Animal Care Attendant Supervisor", "103510", "19", "$61,589.44", "2" ]
+, [ "row-ranh.ysvz.h7c2", "00000000-0000-0000-9421-9F0B8766A0F9", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Engineer", "4021", "27", "$120,140.34", "15" ]
+, [ "row-7qbd_75s3~e3hf", "00000000-0000-0000-0E89-58A0E566ACEC", 0, 1591805870, null, 1591805870, null, "{ }", "Mechanic Technician II", "5009", "19", "$80,945.85", "95" ]
+, [ "row-4gfq~xad5.sfvv", "00000000-0000-0000-C2EF-23A5081D3673", 0, 1591805870, null, 1591805870, null, "{ }", "Customer Service Representative Leader", "100875", "18", "$78,902.00", "1" ]
+, [ "row-s49s-hmvd~2ff6", "00000000-0000-0000-12D8-347DBB997848", 0, 1591805870, null, 1591805870, null, "{ }", "Deputy Clerk of the County Council", "714", "23", "$99,852.00", "2" ]
+, [ "row-chav_uagx-qdbf", "00000000-0000-0000-B54F-8603BBBC3A95", 0, 1591805870, null, 1591805870, null, "{ }", "Social Worker II", "2807", "23", "$75,707.70", "62" ]
+, [ "row-h8uq_hqba-h9et", "00000000-0000-0000-B544-49C3484D0598", 0, 1591805870, null, 1591805870, null, "{ }", "Public Service Craftsworker I", "205229", "15", "$61,686.76", "35" ]
+, [ "row-4p85_agnt.v3rm", "00000000-0000-0000-E923-0B70147C347A", 0, 1591805870, null, 1591805870, null, "{ }", "Customer Service Representative I", "879", "13", "$50,109.58", "17" ]
+, [ "row-t323-fdy5.46pi", "00000000-0000-0000-E741-D79851D9C7FC", 0, 1591805870, null, 1591805870, null, "{ }", "Work Force Leader IV", "5210", "21", "$85,688.31", "9" ]
+, [ "row-g6tx-niz6-qg8d", "00000000-0000-0000-4890-850A1B7F075E", 0, 1591805870, null, 1591805870, null, "{ }", "Community Services Aide I", "623", "13", "$60,950.32", "2" ]
+, [ "row-3xqe-3b77~2tgp", "00000000-0000-0000-DE3E-96C247486226", 0, 1591805870, null, 1591805870, null, "{ }", "Public Service Worker II", "5231", "9", "$43,945.42", "21" ]
+, [ "row-6byf-t7a6_6sfn", "00000000-0000-0000-D6CC-EBB906DCA2EC", 0, 1591805870, null, 1591805870, null, "{ }", "Information Technology Specialist III", "552", "26", "$107,979.60", "43" ]
+, [ "row-2vh9-xsv9.tyvd", "00000000-0000-0000-7E70-2583055DC903", 0, 1591805870, null, 1591805870, null, "{ }", "Motor Pool Attendant", "5013", "9", "$50,770.38", "8" ]
+, [ "row-39sy-cmue-erwk", "00000000-0000-0000-3F9A-877EFD507430", 0, 1591805870, null, 1591805870, null, "{ }", "Liquor Store Clerk II", "8016", "14", "$54,174.23", "48" ]
+, [ "row-gy25.bsrz~ur7j", "00000000-0000-0000-0237-8D84B851B9E6", 0, 1591805870, null, 1591805870, null, "{ }", "Fire/Rescue Battalion Chief", "3165", "B3", "$135,022.66", "25" ]
+, [ "row-c2w8_t8yu.ax7j", "00000000-0000-0000-7CCA-27CCD80CF1B3", 0, 1591805870, null, 1591805870, null, "{ }", "Driver/Clerk", "1168", "12", "$48,522.53", "6" ]
+, [ "row-vaf6.if2g~gj9v", "00000000-0000-0000-B112-68E0B6CA602F", 0, 1591805870, null, 1591805870, null, "{ }", "Resident Supervisor II", "3250", "20", "$71,065.52", "11" ]
+, [ "row-v2h8~mtnh.ke5m", "00000000-0000-0000-0B67-6A1A4E5408D4", 0, 1591805870, null, 1591805870, null, "{ }", "Medical Doctor Psychiatrist III", "132005", "MD3", "$203,593.00", "2" ]
+, [ "row-3xb8~4yji-s8xk", "00000000-0000-0000-2037-13F790DC4FEE", 0, 1591805870, null, 1591805870, null, "{ }", "Supervisor Parking Meter Unit", "4522", "18", "$78,492.58", "1" ]
+, [ "row-dwxt-i8nc.88k6", "00000000-0000-0000-CACF-97C643486F3C", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Pool Manager", "1005", "18", "$49,118.48", "4" ]
+, [ "row-swrx~qunh-gc6a", "00000000-0000-0000-5F57-706FD944A9F2", 0, 1591805870, null, 1591805870, null, "{ }", "Police Officer III", "3080", "P4", "$85,373.13", "811" ]
+, [ "row-ywkz.gjkg~q3pp", "00000000-0000-0000-B6F2-9B11382E3E86", 0, 1591805870, null, 1591805870, null, "{ }", "Program Specialist I", "837", "18", "$72,509.52", "55" ]
+, [ "row-bckb_gwqc~vcgq", "00000000-0000-0000-F2DF-A9886047ECD5", 0, 1591805870, null, 1591805870, null, "{ }", "Plumber Supervisor", "5061", "24", "$97,318.92", "1" ]
+, [ "row-3kgm_qbhd~pmng", "00000000-0000-0000-6242-046EC6E82FE3", 0, 1591805870, null, 1591805870, null, "{ }", "Investment Portfolio Manager", "205", "29", "$132,759.00", "1" ]
+, [ "row-xisw~zknh_v4ur", "00000000-0000-0000-61CC-A7006CECB409", 0, 1591805870, null, 1591805870, null, "{ }", "Survey Crew Leader", "4060", "19", "$61,447.87", "1" ]
+, [ "row-t8xm~a5e3~w5nn", "00000000-0000-0000-03D9-F1EA64C40AA1", 0, 1591805870, null, 1591805870, null, "{ }", "Capital Projects Manager", "4410", "28", "$125,408.88", "22" ]
+, [ "row-bbv9_fdu2.ciiw", "00000000-0000-0000-EE67-3292A245C629", 0, 1591805870, null, 1591805870, null, "{ }", "Principal Administrative Aide", "9274", "13", "$55,330.52", "101" ]
+, [ "row-566q-xhce~twrq", "00000000-0000-0000-280E-C789B819D397", 0, 1591805870, null, 1591805870, null, "{ }", "Security Officer III (Sergeant)", "3538", "21", "$81,694.04", "5" ]
+, [ "row-v67z.3hcy.fwui", "00000000-0000-0000-B6BB-1185C983CA90", 0, 1591805870, null, 1591805870, null, "{ }", "Executive Administrative Aide", "9272", "17", "$72,391.56", "26" ]
+, [ "row-khxx~e5tf.arbw", "00000000-0000-0000-130E-4011DED30A0A", 0, 1591805870, null, 1591805870, null, "{ }", "Social Worker III", "2806", "24", "$91,567.89", "92" ]
+, [ "row-379r_xitu~cbdv", "00000000-0000-0000-93E9-621A4112D1D1", 0, 1591805870, null, 1591805870, null, "{ }", "Epidemiologist II", "2712", "26", "$115,099.00", "1" ]
+, [ "row-3iq3.qimx_6nan", "00000000-0000-0000-69B9-8260FA26BD3D", 0, 1591805870, null, 1591805870, null, "{ }", "Dental Hygienist", "2105", "21", "$90,848.00", "2" ]
+, [ "row-e9fr~q4yi~uywa", "00000000-0000-0000-B861-44C354BB4EA9", 0, 1591805870, null, 1591805870, null, "{ }", "Customer Service Representative II", "878", "16", "$60,075.63", "28" ]
+, [ "row-aw6d-r44i~yfin", "00000000-0000-0000-C855-F89932D50B6F", 0, 1591805870, null, 1591805870, null, "{ }", "Master Firefighter/Rescuer", "3169", "F4", "$91,340.08", "210" ]
+, [ "row-d9zh-q2im.729w", "00000000-0000-0000-1C13-25D91CFC3D15", 0, 1591805870, null, 1591805870, null, "{ }", "Mail Services Supervisor", "5189", "17", "$65,107.75", "1" ]
+, [ "row-ym8n-iggw-gnyd", "00000000-0000-0000-FD6F-06C2475008F2", 0, 1591805870, null, 1591805870, null, "{ }", "Depot Supply Coordinator", "9233", "15", "$65,826.45", "7" ]
+, [ "row-xfcm-gkut~7svj", "00000000-0000-0000-1653-711284107654", 0, 1591805870, null, 1591805870, null, "{ }", "HVAC Mechanic II", "5082", "19", "$82,691.00", "5" ]
+, [ "row-6c77.hcqd.cu7k", "00000000-0000-0000-9722-5C19984AFB8D", 0, 1591805870, null, 1591805870, null, "{ }", "Forensics Specialist I", "3521", "20", "$59,734.34", "6" ]
+, [ "row-eqir~zcds~ftdu", "00000000-0000-0000-7673-7027C55ADFE7", 0, 1591805870, null, 1591805870, null, "{ }", "Information Technology Project Manager", "549", "40", "$182,075.00", "1" ]
+, [ "row-qnwu.gw7n-nw43", "00000000-0000-0000-89E2-055A24156A3C", 0, 1591805870, null, 1591805870, null, "{ }", "Transit Marketing Specialist", "4479", "21", "$84,613.46", "3" ]
+, [ "row-x5bi~yq38.vutc", "00000000-0000-0000-E4AE-F6C818A7B6F9", 0, 1591805870, null, 1591805870, null, "{ }", "Shift Supervisor Transportation Management Center", "4018", "23", "$99,852.00", "1" ]
+, [ "row-6tjp.di4w~v474", "00000000-0000-0000-DF60-B6E0083A88BC", 0, 1591805870, null, 1591805870, null, "{ }", "Enviromental Compliance Supervisor", "2237", "26", "$115,099.00", "2" ]
+, [ "row-axq8~mtiq_cbcj", "00000000-0000-0000-5456-066B0B9CD85F", 0, 1591805870, null, 1591805870, null, "{ }", "Office Clerk", "9277", "5", "$41,633.64", "8" ]
+, [ "row-bxsc_ajt3.8pxv", "00000000-0000-0000-7C62-5BB5D5289B2F", 0, 1591805870, null, 1591805870, null, "{ }", "Electrician II", "5072", "19", "$82,476.20", "5" ]
+, [ "row-khfk_3c3s_jyx7", "00000000-0000-0000-C61C-23D4D7106315", 0, 1591805870, null, 1591805870, null, "{ }", "Security Officer IV (Lieutenant)", "3537", "23", "$79,937.39", "4" ]
+, [ "row-py8n-4fs8_dn3s", "00000000-0000-0000-2DC5-267B514CA5E7", 0, 1591805870, null, 1591805870, null, "{ }", "Engineer III", "4022", "25", "$104,773.95", "20" ]
+, [ "row-qjbs_r26w-95ui", "00000000-0000-0000-B5DE-26B6E31495C4", 0, 1591805870, null, 1591805870, null, "{ }", "ERP Change Management Specialist", "100542", "27", "$120,703.00", "1" ]
+, [ "row-8uim~tnph-rxzs", "00000000-0000-0000-8D8A-D2706A603F38", 0, 1591805870, null, 1591805870, null, "{ }", "Information Technology Technician I", "557", "14", "$43,178.13", "1" ]
+, [ "row-z5dh-w5gx~vksw", "00000000-0000-0000-DCDD-7CFC117C9963", 0, 1591805870, null, 1591805870, null, "{ }", "Energy Management Systems Technician", "5325", "20", "$86,669.00", "2" ]
+, [ "row-mqrj_7vkd_f658", "00000000-0000-0000-5F63-540AE83CDEC4", 0, 1591805870, null, 1591805870, null, "{ }", "Revenue Counter", "4534", "11", "$45,331.49", "3" ]
+, [ "row-f7rj.w5ym_bq7f", "00000000-0000-0000-F3D0-B395CEAE4C87", 0, 1591805870, null, 1591805870, null, "{ }", "Equipment Operator I", "5113", "14", "$52,642.50", "96" ]
+, [ "row-2mkr~vmi5~5f5y", "00000000-0000-0000-5EEF-A7A02AC34879", 0, 1591805870, null, 1591805870, null, "{ }", "Correctional Specialist II", "3248", "22", "$84,390.31", "13" ]
+, [ "row-vgf7.25xn.j8z5", "00000000-0000-0000-0B4D-47616FC1AD12", 0, 1591805870, null, 1591805870, null, "{ }", "Public Relations Specialist", "812", "24", "$104,680.00", "1" ]
+, [ "row-c627-4pqw_7kx7", "00000000-0000-0000-6DE9-AE4A6D83BF39", 0, 1591805870, null, 1591805870, null, "{ }", "Land Survey Supervisor", "4059", "24", "$104,680.00", "1" ]
+, [ "row-2bd5-397x-y953", "00000000-0000-0000-6C9D-1E21C97EC9AD", 0, 1591805870, null, 1591805870, null, "{ }", "Work Force Leader III", "5211", "19", "$58,960.47", "1" ]
+, [ "row-irv7_m598~j77u", "00000000-0000-0000-412B-A3B3E9D431D1", 0, 1591805870, null, 1591805870, null, "{ }", "Equipment Operator III", "5111", "16", "$69,911.75", "10" ]
+, [ "row-76ew-tqfk.yxiy", "00000000-0000-0000-1406-C28EB7672243", 0, 1591805870, null, 1591805870, null, "{ }", "Equipment Services Coordinator", "5005", "24", "$104,680.00", "4" ]
+, [ "row-yw4y_72ay.fsz2", "00000000-0000-0000-2C88-1D3EEF759E23", 0, 1591805870, null, 1591805870, null, "{ }", "Recreation Supervisor", "1012", "23", "$95,445.46", "14" ]
+, [ "row-q6cc_vabf_nxtv", "00000000-0000-0000-040F-1E4B20CE9FB1", 0, 1591805870, null, 1591805870, null, "{ }", "Fiscal Assistant", "215", "16", "$66,524.11", "36" ]
+, [ "row-ysg9~fjx7.utxk", "00000000-0000-0000-2D61-98D86CEE170B", 0, 1591805870, null, 1591805870, null, "{ }", "Public Health Advisor", "2718", "21", "$84,548.93", "5" ]
+, [ "row-wwap~ddek_zwk3", "00000000-0000-0000-8F63-89B2BEE70875", 0, 1591805870, null, 1591805870, null, "{ }", "Program Manager I", "834", "23", "$92,106.30", "85" ]
+, [ "row-rvme-xc2j~v4ds", "00000000-0000-0000-253C-9BB164D7AF48", 0, 1591805870, null, 1591805870, null, "{ }", "Program Aide", "663", "14", "$53,710.32", "18" ]
+, [ "row-asu3.4er4-spzm", "00000000-0000-0000-B191-DCC9A5B6B325", 0, 1591805870, null, 1591805870, null, "{ }", "Registered Veterinary Technician", "206512", "19", "$58,568.92", "2" ]
+, [ "row-zdsg~ue9x_8pxq", "00000000-0000-0000-25F6-8E0DB1103D51", 0, 1591805870, null, 1591805870, null, "{ }", "Safety and Training Supervisor", "104463", "21", "$79,446.52", "2" ]
+, [ "row-ijyr_k57g~ew7q", "00000000-0000-0000-2BF3-2FCC34413177", 0, 1591805870, null, 1591805870, null, "{ }", "Therapist, Supervisory", "2753", "26", "$110,570.71", "20" ]
+, [ "row-9974_iits-sdc8", "00000000-0000-0000-E63E-00A43D47F649", 0, 1591805870, null, 1591805870, null, "{ }", "Community Services Aide III", "621", "18", "$69,090.59", "78" ]
+, [ "row-dv8e-kzu4.zaus", "00000000-0000-0000-36DC-4306DE711FE1", 0, 1591805870, null, 1591805870, null, "{ }", "Transportation Contract Compliance Inspector I", "4070", "17", "$62,244.15", "2" ]
+, [ "row-f5bd-jyag~fimj", "00000000-0000-0000-6DD1-2D18091A6646", 0, 1591805870, null, 1591805870, null, "{ }", "Government Records Supervisor", "109270", "20", "$70,682.91", "1" ]
+, [ "row-ykpa~43rx~gfxi", "00000000-0000-0000-B0AE-18CBE2C901DD", 0, 1591805870, null, 1591805870, null, "{ }", "Supervisory Supply Technician", "9232", "19", "$79,363.74", "4" ]
+, [ "row-e27v-gxun~bmiu", "00000000-0000-0000-8E0C-9A7BEB2090D9", 0, 1591805870, null, 1591805870, null, "{ }", "Library Assistant I", "1166", "13", "$59,292.78", "29" ]
+, [ "row-rstc_wyqw.8gay", "00000000-0000-0000-93B4-27994C912178", 0, 1591805870, null, 1591805870, null, "{ }", "Civil Works Designer", "4033", "20", "$86,669.00", "1" ]
+, [ "row-9sdp.aryh-b3sz", "00000000-0000-0000-E8ED-952C7B0796CC", 0, 1591805870, null, 1591805870, null, "{ }", "Communications Technician II", "3422", "20", "$86,669.00", "4" ]
+, [ "row-zznj.qamd~tc7w", "00000000-0000-0000-A374-99C9712FC3B2", 0, 1591805870, null, 1591805870, null, "{ }", "Recreation Coordinator", "1018", "18", "$54,021.19", "13" ]
+, [ "row-4y5q-argp.vm23", "00000000-0000-0000-1F23-C193881CA9F5", 0, 1591805870, null, 1591805870, null, "{ }", "Accountant/Auditor Supervisor", "208", "26", "$112,381.66", "9" ]
+, [ "row-67yr_xrh3_4cbz", "00000000-0000-0000-D206-7A4F6ED72423", 0, 1591805870, null, 1591805870, null, "{ }", "Fire/Rescue Division Chief", "3150", "B6", "$168,617.00", "3" ]
+, [ "row-mfbd.kn2v_c5cp", "00000000-0000-0000-4A96-698B8E16479F", 0, 1591805870, null, 1591805870, null, "{ }", "Warehouse Worker", "8118", "9", "$46,447.50", "2" ]
+, [ "row-e5me~ry83-2pem", "00000000-0000-0000-029E-FFD8994A26D8", 0, 1591805870, null, 1591805870, null, "{ }", "Library Technician", "1160", "13", "$60,184.73", "3" ]
+, [ "row-npxw_sdus_t56s", "00000000-0000-0000-F3E1-97921E75785C", 0, 1591805870, null, 1591805870, null, "{ }", "Master Police Officer", "3074", "P5", "$96,668.56", "71" ]
+, [ "row-qm3w-zruy_29hs", "00000000-0000-0000-627C-FCEB8143D054", 0, 1591805870, null, 1591805870, null, "{ }", "Police Services Assistant", "3501", "16", "$68,375.21", "33" ]
+, [ "row-zyyz_p9wv~c436", "00000000-0000-0000-A5FF-62F33E8902E3", 0, 1591805870, null, 1591805870, null, "{ }", "Printing Technician III", "5175", "16", "$68,103.36", "5" ]
+, [ "row-cubw_gs86-35au", "00000000-0000-0000-7E68-8B465A620121", 0, 1591805870, null, 1591805870, null, "{ }", "Environmental Health Specialist III", "2234", "24", "$93,019.85", "22" ]
+, [ "row-uvhr-kmer~wt23", "00000000-0000-0000-C9E9-F21E14F6D24F", 0, 1591805870, null, 1591805870, null, "{ }", "Transit Aide I", "4468", "8", "$42,216.82", "1" ]
+, [ "row-kzhz.778g~egk4", "00000000-0000-0000-FE03-1DE166B8C1F8", 0, 1591805870, null, 1591805870, null, "{ }", "Chief Veterinarian", "106515", "38", "$162,707.55", "1" ]
+, [ "row-7bbd.nrdb~jk6a", "00000000-0000-0000-2292-134AEAA01DB1", 0, 1591805870, null, 1591805870, null, "{ }", "Supervisory Social Worker", "2805", "26", "$107,157.49", "31" ]
+, [ "row-9xxv~pkxw-2cyy", "00000000-0000-0000-41D4-4D70947A96F1", 0, 1591805870, null, 1591805870, null, "{ }", "Urban District Public Service Team Supervisor", "629", "16", "$61,605.59", "4" ]
+, [ "row-kdfh_ckh9-jp8n", "00000000-0000-0000-CD07-8ADADB2F6386", 0, 1591805870, null, 1591805870, null, "{ }", "Engineer I", "4024", "19", "$80,489.13", "1" ]
+, [ "row-s87k.neng~pdde", "00000000-0000-0000-7B0A-508BA18429A1", 0, 1591805870, null, 1591805870, null, "{ }", "Transit Communications Leader", "4461", "18", "$72,772.27", "11" ]
+, [ "row-neur~hvyf-x3f9", "00000000-0000-0000-92CA-1D7CF163CFFD", 0, 1591805870, null, 1591805870, null, "{ }", "Laboratory Supervisor", "103550", "27", "$115,389.55", "2" ]
+, [ "row-9t2p-ymhb~vu3y", "00000000-0000-0000-2D00-17B167697211", 0, 1591805870, null, 1591805870, null, "{ }", "Mail Clerk Leader", "5191", "14", "$56,873.98", "1" ]
+, [ "row-rbwj_v28j~tg3d", "00000000-0000-0000-D2C7-BE2FF9936786", 0, 1591805870, null, 1591805870, null, "{ }", "Human Services Specialist", "2009", "23", "$99,852.00", "2" ]
+, [ "row-2s3g~nkmy~rd4n", "00000000-0000-0000-7B9B-535A5E1042A4", 0, 1591805870, null, 1591805870, null, "{ }", "Supply Technician II", "9236", "12", "$63,705.59", "3" ]
+, [ "row-ayds-v3hw_nc22", "00000000-0000-0000-B0F6-A1F9A3A0531E", 0, 1591805870, null, 1591805870, null, "{ }", "Fire/Rescue Captain", "3167", "B2", "$117,297.94", "142" ]
+, [ "row-u43h~yt4h~mp4r", "00000000-0000-0000-78BA-9AEFF7696488", 0, 1591805870, null, 1591805870, null, "{ }", "Income Assistance Program Specialist I", "2013", "17", "$51,013.58", "3" ]
+, [ "row-5fgx~c46e.atj5", "00000000-0000-0000-ACC4-8D01ACA01F7C", 0, 1591805870, null, 1591805870, null, "{ }", "Photographic/Digital Image Technician", "3512", "18", "$65,863.93", "1" ]
+, [ "row-sejd~wj4g.3s86", "00000000-0000-0000-172F-D34EF03D336B", 0, 1591805870, null, 1591805870, null, "{ }", "Client Assistance Specialist", "2814", "20", "$73,767.79", "40" ]
+, [ "row-tay8.7qpt-jxsa", "00000000-0000-0000-951F-3ADDC33789AE", 0, 1591805870, null, 1591805870, null, "{ }", "Traffic Management Technician II", "4111", "19", "$58,127.50", "4" ]
+, [ "row-fdt6.aw5u-4ygd", "00000000-0000-0000-687D-4503236C2C9C", 0, 1591805870, null, 1591805870, null, "{ }", "Manager Taxicab Regulation and Special Transit Services", "4454", "26", "$88,701.63", "1" ]
+, [ "row-jb9k.su8s.6w6y", "00000000-0000-0000-C454-EEB1A9DF64B1", 0, 1591805870, null, 1591805870, null, "{ }", "Arborist", "5206", "23", "$91,215.24", "5" ]
+, [ "row-2yby_i9s8_8isx", "00000000-0000-0000-856F-BED94F5B9B56", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Business Development Specialist", "4430", "27", "$120,703.00", "1" ]
+, [ "row-phk2_meyn-5tym", "00000000-0000-0000-A735-F3400CE80AD5", 0, 1591805870, null, 1591805870, null, "{ }", "Correctional Records Coordinator", "3258", "17", "$67,541.35", "8" ]
+, [ "row-5pr2-w95v.u45n", "00000000-0000-0000-4773-0E7D3A170B07", 0, 1591805870, null, 1591805870, null, "{ }", "Transit Bus Operator", "4466", "15", "$54,681.48", "623" ]
+, [ "row-jbiy-22an-5pn7", "00000000-0000-0000-10BF-5DAC42871913", 0, 1591805870, null, 1591805870, null, "{ }", "Fire/Rescue Lieutenant", "3168", "B1", "$100,748.62", "121" ]
+, [ "row-n2id_qxz5.x7xy", "00000000-0000-0000-50D8-24A113EB3A8B", 0, 1591805870, null, 1591805870, null, "{ }", "Radiologic Technologist", "202420", "17", "$75,290.00", "2" ]
+, [ "row-zfps-pbi8_bing", "00000000-0000-0000-7600-A6B12AC8F8F0", 0, 1591805870, null, 1591805870, null, "{ }", "Work Force Leader I", "5213", "13", "$58,004.32", "2" ]
+, [ "row-jutt.wtwd~p6up", "00000000-0000-0000-D5AD-15F6F0A625ED", 0, 1591805870, null, 1591805870, null, "{ }", "Management and Budget Specialist I", "428", "18", "$78,902.00", "1" ]
+, [ "row-bwfw.weqh.si6v", "00000000-0000-0000-855A-ABA7B65C22A3", 0, 1591805870, null, 1591805870, null, "{ }", "Transit Operations Supervisor", "4457", "21", "$89,015.11", "23" ]
+, [ "row-thdf~q9zh-59r9", "00000000-0000-0000-E62A-91281EC58E05", 0, 1591805870, null, 1591805870, null, "{ }", "Automotive Parts Technician II", "9238", "16", "$68,294.84", "19" ]
+, [ "row-wk35.uu63.ttjk", "00000000-0000-0000-E20D-B4444950FD41", 0, 1591805870, null, 1591805870, null, "{ }", "Emergency Management Specialist II", "200701", "26", "$95,417.36", "8" ]
+, [ "row-a4fy.7kx9_ph2n", "00000000-0000-0000-D086-1885A909A170", 0, 1591805870, null, 1591805870, null, "{ }", "Forensics Specialist II", "3520", "21", "$74,317.89", "2" ]
+, [ "row-zdhe_capp~tg87", "00000000-0000-0000-5A89-510A9C9EE590", 0, 1591805870, null, 1591805870, null, "{ }", "Library Associate II", "1190", "21", "$90,703.19", "7" ]
+, [ "row-5qkf-hj6j-6bts", "00000000-0000-0000-2424-DD60105FFB5B", 0, 1591805870, null, 1591805870, null, "{ }", "Animal Services Officer, Lead", "202272", "21", "$68,185.13", "2" ]
+, [ "row-ee6i~wp96.6uqn", "00000000-0000-0000-7354-40FE0B4C33B5", 0, 1591805870, null, 1591805870, null, "{ }", "Correctional Officer III (Corporal)", "3237", "C5", "$75,753.16", "142" ]
+, [ "row-x8ah-cnxk.jvd3", "00000000-0000-0000-B513-48AB338EEDDD", 0, 1591805870, null, 1591805870, null, "{ }", "Emergency Vehicle Maintenance Crew Chief", "205001", "23", "$99,852.00", "4" ]
+, [ "row-g8fz_cn5q.p2j2", "00000000-0000-0000-2690-44A7C66498AA", 0, 1591805870, null, 1591805870, null, "{ }", "Visual Information Specialist", "4445", "21", "$86,650.02", "6" ]
+, [ "row-g2vg.qh8c_3dup", "00000000-0000-0000-B467-F309E3A24B11", 0, 1591805870, null, 1591805870, null, "{ }", "School Health Room Technician I", "202702", "15", "$68,575.00", "1" ]
+, [ "row-f4yb_7tjr~sfzm", "00000000-0000-0000-47E4-1E95787DAAD4", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Permitting Services Specialist", "2201", "26", "$111,867.94", "39" ]
+, [ "row-t5mj-9ajd.jczw", "00000000-0000-0000-FD18-3B6AD45D2C17", 0, 1591805870, null, 1591805870, null, "{ }", "Lead Revenue Counter", "4533", "13", "$62,488.00", "1" ]
+, [ "row-tntw_skr4.j2hu", "00000000-0000-0000-AA5A-F2752F2EB969", 0, 1591805870, null, 1591805870, null, "{ }", "Latent Print Examiner", "3505", "20", "$75,570.31", "4" ]
+, [ "row-weg7_gjn5_jtiy", "00000000-0000-0000-AC1B-FCF1C0D83EBA", 0, 1591805870, null, 1591805870, null, "{ }", "Planning Specialist III", "4403", "23", "$92,327.03", "24" ]
+, [ "row-dq75-gkci_p74a", "00000000-0000-0000-E3BF-A3EB9522146E", 0, 1591805870, null, 1591805870, null, "{ }", "Alcohol and Tobacco Enforcement Specialist II", "2220", "21", "$87,290.86", "7" ]
+, [ "row-mqbx-uyrd~brwr", "00000000-0000-0000-169F-8835AC62902F", 0, 1591805870, null, 1591805870, null, "{ }", "Enterprise Technology Expert", "100548", "34", "$159,475.00", "3" ]
+, [ "row-2hwc~fihx~tzm9", "00000000-0000-0000-1C14-24A6F6A01D33", 0, 1591805870, null, 1591805870, null, "{ }", "Fire/Rescue Assistant Chief", "3163", "B4", "$148,712.00", "12" ]
+, [ "row-pssm~3y6a-9uy4", "00000000-0000-0000-A0A2-7DD6BD70BBA6", 0, 1591805870, null, 1591805870, null, "{ }", "Messenger-Clerk", "9252", "7", "$39,366.25", "1" ]
+, [ "row-gi2w_yfhp-yv6e", "00000000-0000-0000-D47F-80602E7869F6", 0, 1591805870, null, 1591805870, null, "{ }", "Nurse Manager", "2304", "25", "$107,867.36", "15" ]
+, [ "row-8gm4~2wrc-f658", "00000000-0000-0000-3ED9-1B2C2D0656D2", 0, 1591805870, null, 1591805870, null, "{ }", "Construction Representative III", "3650", "23", "$96,865.33", "18" ]
+, [ "row-dc4k_vv52~ewbe", "00000000-0000-0000-03BA-E7B5C1EBDE0C", 0, 1591805870, null, 1591805870, null, "{ }", "Real Estate Specialist III", "328", "25", "$109,079.84", "4" ]
+, [ "row-ejn8-hcmj-dqve", "00000000-0000-0000-82E1-1055080516EE", 0, 1591805870, null, 1591805870, null, "{ }", "Security Officer I", "3535", "15", "$62,162.86", "22" ]
+, [ "row-3uae_tpt2-zgif", "00000000-0000-0000-27F5-9D3F9A1D1564", 0, 1591805870, null, 1591805870, null, "{ }", "EMS Educator", "3149", "25", "$105,535.06", "1" ]
+, [ "row-ijn2.xinv_cz53", "00000000-0000-0000-F92C-C154D74933EB", 0, 1591805870, null, 1591805870, null, "{ }", "Accountant/Auditor, Lead/Senior", "209", "25", "$109,049.88", "12" ]
+, [ "row-vmjv.wqsw_ij2f", "00000000-0000-0000-D14B-9E6A9CE851F6", 0, 1591805870, null, 1591805870, null, "{ }", "Truck Driver Helper/Warehouse Worker", "8117", "10", "$44,057.14", "27" ]
+, [ "row-yb2m~ff6q~r74f", "00000000-0000-0000-714F-CB47E001BE22", 0, 1591805870, null, 1591805870, null, "{ }", "Program Manager II", "832", "25", "$104,143.12", "175" ]
+, [ "row-m8pq_ua5h.cgcv", "00000000-0000-0000-984A-81D304EA43C4", 0, 1591805870, null, 1591805870, null, "{ }", "Public Safety Reporting Aide I", "3502", "16", "$62,423.72", "6" ]
+, [ "row-u7d6_cmkt.aucq", "00000000-0000-0000-D706-5D1EE2E94E66", 0, 1591805870, null, 1591805870, null, "{ }", "Public Safety Reporting Aide II", "3504", "18", "$67,443.51", "3" ]
+, [ "row-7efc.7h9a-2ti3", "00000000-0000-0000-97F2-8B9EA625930B", 0, 1591805870, null, 1591805870, null, "{ }", "Autobody Repairer", "5015", "17", "$71,414.74", "4" ]
+, [ "row-x9ye_e6r2.xvag", "00000000-0000-0000-3C75-F5C7FCF82D9A", 0, 1591805870, null, 1591805870, null, "{ }", "Community Health Nurse II", "2306", "24", "$95,906.25", "148" ]
+, [ "row-gh94-43dp.ids2", "00000000-0000-0000-4DD9-28006E777BA3", 0, 1591805870, null, 1591805870, null, "{ }", "Traffic Enforcement Field Service Technician II", "203513", "15", "$58,162.06", "8" ]
+, [ "row-wt2k_adyt~8kd9", "00000000-0000-0000-3D34-4F2D2B32F5E2", 0, 1591805870, null, 1591805870, null, "{ }", "Crime Analyst", "3517", "20", "$74,728.55", "10" ]
+, [ "row-wp4b-8yq6~tuay", "00000000-0000-0000-04C9-448159E57376", 0, 1591805870, null, 1591805870, null, "{ }", "Nurse Practitioner", "2309", "26", "$99,504.07", "3" ]
+, [ "row-j2bm.7ikh_r9zt", "00000000-0000-0000-2035-8F26DBAD8E8B", 0, 1591805870, null, 1591805870, null, "{ }", "Information Technology Specialist II", "553", "23", "$95,459.93", "7" ]
+, [ "row-cp8c.y8wb~7jnh", "00000000-0000-0000-C61D-6316D3196EE0", 0, 1591805870, null, 1591805870, null, "{ }", "Building Services Worker II", "5308", "8", "$47,941.50", "20" ]
+, [ "row-7icr~692v~atzg", "00000000-0000-0000-DB64-70641363DD56", 0, 1591805870, null, 1591805870, null, "{ }", "Medical Doctor Psychiatrist IV", "142005", "MD4", "$223,953.00", "1" ]
+, [ "row-rupc~isxx~f8dc", "00000000-0000-0000-D3F4-DE2E4323882E", 0, 1591805870, null, 1591805870, null, "{ }", "Community Health Clinic Technician Leader", "2708", "17", "$75,290.00", "1" ]
+, [ "row-6uks.y9w3~5rrf", "00000000-0000-0000-0FE2-012927B8A07C", 0, 1591805870, null, 1591805870, null, "{ }", "Administrative Specialist II", "151", "21", "$85,087.28", "70" ]
+, [ "row-htkx.uii8~633d", "00000000-0000-0000-5610-9CF18FB3FF11", 0, 1591805870, null, 1591805870, null, "{ }", "Management Services Supervisor", "4477", "27", "$113,525.42", "2" ]
+, [ "row-6xxx-yd4y.nmwf", "00000000-0000-0000-5DB8-02C51241FC5A", 0, 1591805870, null, 1591805870, null, "{ }", "Audiovisual Production Specialist", "4443", "23", "$98,979.87", "5" ]
+, [ "row-nmah-fsfx.3sz3", "00000000-0000-0000-2FFC-9EEC562EEA09", 0, 1591805870, null, 1591805870, null, "{ }", "Senior/Lead Fiscal and Policy Analyst", "410", "30", "$134,788.26", "6" ]
+, [ "row-shwz.bqyk.g25d", "00000000-0000-0000-F1CF-9A43F30374AC", 0, 1591805870, null, 1591805870, null, "{ }", "Chief Deputy Sheriff (Colonel)", "3524", "D4", "$159,332.00", "1" ]
+, [ "row-zhr4.hamx.wz6i", "00000000-0000-0000-118F-3D5F0A79FC5F", 0, 1591805870, null, 1591805870, null, "{ }", "Printer Apprentice", "5179", "9", "$34,147.77", "1" ]
+, [ "row-phuh~v4jf~4zkt", "00000000-0000-0000-AADB-DE2206504893", 0, 1591805870, null, 1591805870, null, "{ }", "Housing Code Inspector III", "2253", "23", "$99,557.11", "5" ]
+, [ "row-kztu_uyjy~39cv", "00000000-0000-0000-6685-17843014EF11", 0, 1591805870, null, 1591805870, null, "{ }", "Parking Meter Mechanic", "4523", "15", "$62,658.63", "4" ]
+, [ "row-nhse.6vr4_m7n3", "00000000-0000-0000-98BB-2DA5035EA194", 0, 1591805870, null, 1591805870, null, "{ }", "Electrician I", "5073", "18", "$75,920.53", "4" ]
+, [ "row-yy42-rby5~gx8n", "00000000-0000-0000-962A-86FB6055BDFD", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Information Technology Specialist", "551", "28", "$124,616.60", "85" ]
+, [ "row-39sb~4u4j-t32s", "00000000-0000-0000-72AD-397C74EC346A", 0, 1591805870, null, 1591805870, null, "{ }", "Correctional Specialist III", "3245", "24", "$88,444.25", "25" ]
+, [ "row-y5jz_xcde_mf3i", "00000000-0000-0000-B776-9E58D2E2AA75", 0, 1591805870, null, 1591805870, null, "{ }", "Investigator II", "644", "23", "$85,360.37", "1" ]
+, [ "row-wq2w-63xx-xxzk", "00000000-0000-0000-367A-B263FA5B46A8", 0, 1591805870, null, 1591805870, null, "{ }", "Emergency Vehicle Mechanic Technician II", "205002", "20", "$72,591.19", "10" ]
+, [ "row-39ak~7uea.343w", "00000000-0000-0000-8261-EB18655A36E4", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Executive Administrative Aide", "9268", "18", "$75,733.68", "14" ]
+, [ "row-6hmu-hsmy~pyp2", "00000000-0000-0000-EA9F-AFD36300FAF0", 0, 1591805870, null, 1591805870, null, "{ }", "Liquor Store Manager", "8009", "21", "$82,119.61", "26" ]
+, [ "row-f689-3x2i.qiw3", "00000000-0000-0000-93BF-195C5A42F98B", 0, 1591805870, null, 1591805870, null, "{ }", "Transit Analyst", "4460", "16", "$59,083.09", "4" ]
+, [ "row-ct4w-z8pm~46m3", "00000000-0000-0000-D3BB-7FFC59CC4756", 0, 1591805870, null, 1591805870, null, "{ }", "Plumber II", "5062", "19", "$81,909.60", "4" ]
+, [ "row-vjin.d3cy_miii", "00000000-0000-0000-55B3-362585B74735", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Public Safety Emergency Communications Specialist", "203093", "21", "$75,171.88", "2" ]
+, [ "row-8bcx_tsf8~jssa", "00000000-0000-0000-18D6-9753531826F5", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Water Quality Specialist", "2230", "26", "$94,540.02", "1" ]
+, [ "row-sx6u.v5bi~g72i", "00000000-0000-0000-C3DF-DB606493CBFD", 0, 1591805870, null, 1591805870, null, "{ }", "Information Technology Supervisor", "558", "30", "$138,517.48", "5" ]
+, [ "row-54vh.9msj-djdj", "00000000-0000-0000-3CF9-89129B2D7074", 0, 1591805870, null, 1591805870, null, "{ }", "Print Shop Foreman", "5172", "20", "$73,088.55", "1" ]
+, [ "row-wgvs~5wfu_3vrf", "00000000-0000-0000-86DB-C90DDA17DCD2", 0, 1591805870, null, 1591805870, null, "{ }", "Senior Planning Specialist", "4402", "25", "$105,694.47", "21" ]
+, [ "row-dmz8-6yhh_37hn", "00000000-0000-0000-D0D9-ECF75889B9BB", 0, 1591805870, null, 1591805870, null, "{ }", "Facilities and Equipment Maintenance Coordinator", "5027", "20", "$86,669.00", "2" ]
+, [ "row-sq6u-tatx~riqz", "00000000-0000-0000-CA98-3D0EE19042A3", 0, 1591805870, null, 1591805870, null, "{ }", "Legislative Analyst III", "715", "28", "$118,920.54", "5" ]
+, [ "row-kxbz.9pvp~g5jz", "00000000-0000-0000-32C6-4354845A1419", 0, 1591805870, null, 1591805870, null, "{ }", "Urban District Public Service and Maintenance Team Supervisor", "628", "17", "$75,290.00", "3" ]
+, [ "row-badi-hwmy-jhwt", "00000000-0000-0000-78B4-79C68EA3FB5A", 0, 1591805870, null, 1591805870, null, "{ }", "Executive Administrative Aide to Chief Administrative Officer", "9271", "20", "$86,669.00", "1" ]
+, [ "row-8tvn.fp8c-2bh9", "00000000-0000-0000-352E-993AF99CD02E", 0, 1591805870, null, 1591805870, null, "{ }", "Legislative Services Coordinator", "722", "17", "$72,390.31", "6" ]
+, [ "row-jkps-ezm7-3hk7", "00000000-0000-0000-606E-839610761744", 0, 1591805870, null, 1591805870, null, "{ }", "Firefighter/Rescuer III", "3170", "F3", "$74,144.93", "409" ]
+, [ "row-um44_yivb_vcu6", "00000000-0000-0000-4516-1E52EEBC6915", 0, 1591805870, null, 1591805870, null, "{ }", "Income Assistance Program Supervisor", "2011", "24", "$98,148.54", "18" ]
+, [ "row-ujzn~xx6k_byre", "00000000-0000-0000-C103-A335264C153E", 0, 1591805870, null, 1591805870, null, "{ }", "Forensic Firearms/Toolmark Examiner", "3518", "24", "$104,680.00", "2" ]
+, [ "row-525d.mezc_4ier", "00000000-0000-0000-03BF-BC6FFD707DAF", 0, 1591805870, null, 1591805870, null, "{ }", "Information Technology Specialist I", "554", "20", "$76,046.64", "4" ]
+, [ "row-98cp-zvcu_yygw", "00000000-0000-0000-AEA0-3E07D6A33F89", 0, 1591805870, null, 1591805870, null, "{ }", "Imaging Operator Leader", "109009", "14", "$59,682.11", "1" ]
+, [ "row-96hm_wx3y~38u4", "00000000-0000-0000-2B84-57ADDD44F40F", 0, 1591805870, null, 1591805870, null, "{ }", "Water Quality Specialist II", "2231", "22", "$91,574.07", "5" ]
+, [ "row-pfy7.n97k-fssr", "00000000-0000-0000-4044-D2AD862B6C92", 0, 1591805870, null, 1591805870, null, "{ }", "Supply Technician III", "9235", "13", "$55,954.17", "3" ]
+, [ "row-bcgk~m7ju~nscj", "00000000-0000-0000-CF9E-0A14DFD1B3A6", 0, 1591805870, null, 1591805870, null, "{ }", "Forest Conservation Coordinator", "102204", "25", "$109,761.00", "1" ]
+, [ "row-mq53-xazm.th8g", "00000000-0000-0000-459C-4D688B172F7D", 0, 1591805870, null, 1591805870, null, "{ }", "Supply Technician I", "9237", "10", "$39,379.32", "1" ]
+, [ "row-petj-du4n_5vqw", "00000000-0000-0000-B278-27BAA04C3B4F", 0, 1591805870, null, 1591805870, null, "{ }", "Correctional Supervisor - Sergeant", "3234", "C6", "$94,434.43", "37" ]
+, [ "row-4p4z-e4rw.iv2b", "00000000-0000-0000-5D17-AE64ABA4301B", 0, 1591805870, null, 1591805870, null, "{ }", "Police Captain", "3063", "A3", "$156,780.64", "21" ]
+, [ "row-qyz9~zfut-5xtx", "00000000-0000-0000-53AA-29FA06BE7D19", 0, 1591805870, null, 1591805870, null, "{ }", "Deputy Sheriff III", "3529", "G4", "$83,677.86", "66" ]
+, [ "row-mkju-7k55-a9qj", "00000000-0000-0000-5851-38FD5A014802", 0, 1591805870, null, 1591805870, null, "{ }", "Manager III", "112", "M3", "$132,146.03", "252" ]
+, [ "row-275f-ptgp-vzzt", "00000000-0000-0000-81F4-AED0D8C3AA57", 0, 1591805870, null, 1591805870, null, "{ }", "Correctional Specialist IV", "3247", "25", "$105,117.90", "4" ]
+ ]
+}
